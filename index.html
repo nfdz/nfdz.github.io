@@ -3,581 +3,638 @@
 
 <head>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124183504-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-124183504-1');
-    </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124183504-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-124183504-1');
+  </script>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="This is my personal website where you can meet me personally and professionally and read my articles and personal projects.">
-    <meta name="keywords" content="engineer,software,developer,android,android developer,software engineer,telematics,telecommunications,personal website,resume,projects,traveler">
-    <meta name="author" content="Noé Fernández">
-    <meta name="robots" content="index,follow">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="This is my personal website where you can meet me personally and professionally and read my articles and personal projects.">
+  <meta name="keywords"
+    content="engineer,software,developer,android,android developer,software engineer,telematics,telecommunications,personal website,resume,projects,traveler">
+  <meta name="author" content="Noé Fernández">
+  <meta name="robots" content="index,follow">
 
-    <title>Noé Fernández</title>
+  <title>Noé Fernández</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Theme CSS -->
-    <link href="vendor/clean-blog/css/clean-blog.css" rel="stylesheet">
+  <!-- Theme CSS -->
+  <link href="vendor/clean-blog/css/clean-blog.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
 
-    <!-- Cookies Consent -->
-    <link rel="stylesheet" type="text/css" href="vendor/cookieconsent/cookieconsent.min.css" />
-    <script src="vendor/cookieconsent/cookieconsent.min.js"></script>
-    <script>
-    window.addEventListener("load", function(){
-    window.cookieconsent.initialise({
-      "palette": {
-        "popup": {
-          "background": "#13191C"
+  <!-- Cookies Consent -->
+  <link rel="stylesheet" type="text/css" href="vendor/cookieconsent/cookieconsent.min.css" />
+  <script src="vendor/cookieconsent/cookieconsent.min.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#13191C"
+          },
+          "button": {
+            "background": "#1E90FF"
+          }
         },
-        "button": {
-          "background": "#1E90FF"
+        "theme": "classic",
+        "position": "bottom-right",
+        "content": {
+          "message": "This website uses cookies just to track visits (analytics stuff for me)."
         }
-      },
-      "theme": "classic",
-      "position": "bottom-right",
-      "content": {
-        "message": "This website uses cookies just to track visits (analytics stuff for me)."
-      }
-    })});
-    </script>
+      })
+    });
+  </script>
 </head>
 
 <body>
 
-    <button onclick="scrollToTop()" class="scrollTop-button" title="Go to top">Back to top</button>
+  <button onclick="scrollToTop()" class="scrollTop-button" title="Go to top">Back to top</button>
 
-    <!-- [_common] Navigation START -->
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#">Noé Fernández</a>
-            </div>
+  <!-- [_common] Navigation START -->
+  <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="#">Noé Fernández</a>
+      </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                      <a href="#"> > Home < </a>
-                    </li>
-                    <li>
-                      <a href="projects/index.html">Projects</a>
-                    </li>
-                    <li>
-                      <a href="https://medium.com/@nfdz">Blog</a>
-                    </li>
-                    <li>
-                      <a href="#" data-toggle="modal" data-target="#contact-modal">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#"> > Home < </a> </li> <li>
+                <a href="projects/index.html">Projects</a>
+          </li>
+          <li>
+            <a href="https://medium.com/@nfdz">Blog</a>
+          </li>
+          <li>
+            <a href="#" data-toggle="modal" data-target="#contact-modal">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!-- [_common] Navigation END -->
+
+  <!-- [_common] Contact Modal START -->
+  <div class="modal fade" id="contact-modal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title text-center">Contact</h3>
         </div>
-        <!-- /.container -->
-    </nav>
-    <!-- [_common] Navigation END -->
+        <div class="modal-body text-center">
+          <h4> Email </h4>
+          <h3><a class="contact-email" href="mailto:noe.fernandez@protonmail.com?Subject=Hello" target="_top">
+              noe.fernandez@protonmail.com </a></h3>
 
-    <!-- [_common] Contact Modal START -->
-    <div class="modal fade" id="contact-modal" role="dialog">
-      <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h3 class="modal-title text-center">Contact</h3>
-          </div>
-          <div class="modal-body text-center">
-            <h4> Email </h4>
-            <h3><a class="contact-email" href="mailto:noe.fernandez@protonmail.com?Subject=Hello" target="_top"> noe.fernandez@protonmail.com </a></h3>
-
-            <br>
-            <h4></span> Networks </h4>
-            <!-- THIS CONTENT MUST BE THE SAME THAT FOOTER CONTENT -->
-            <ul class="list-inline text-center">
-                <li>
-                    <a href="https://github.com/nfdz" target="_blank">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/noe-fernandez/" target="_blank">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/nfdzls" target="_blank">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://medium.com/@nfdz" target="_blank">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-            </ul>
-          </div>
+          <br>
+          <h4></span> Networks </h4>
+          <!-- THIS CONTENT MUST BE THE SAME THAT FOOTER CONTENT -->
+          <ul class="list-inline text-center">
+            <li>
+              <a href="https://github.com/nfdz" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/noe-fernandez/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/nfdzls" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/@nfdz" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <!-- [_common] Contact Modal END -->
+  </div>
+  <!-- [_common] Contact Modal END -->
 
-    <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h3 class="unselectable" id="terminal-text"><span style="color:#1E90FF">|</span></h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <ul class="menu-headers">
-      <li><a href="#who-am-I"> Who am I? </a></li>
-      <li><a href="#professional-objectives"> Professional Objectives </a></li>
-      <li><a href="#education"> Education </a></li>
-      <li><a href="#professional-skills"> Professional Skills </a></li>
-      <li><a href="#work-experience"> Work Experience </a></li>
-    </ul>
-
-    <hr id="who-am-I" class="section-separator">
-
+  <!-- Page Header -->
+  <!-- Set your background image for this header on the line below. -->
+  <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
     <div class="container">
-      <!-- About me section -->
-      <div class="row row-centered">
-        <div class="col-xs-6 col-centered col-min col-section">
-          <img src="img/stormtrooper-grayscale.png" alt="Me at work" width="70%">
-          <span class="caption text-muted">Me any day at work</span>
-        </div>
-        <div class="col-xs-6 col-centered col-min col-section">
-          <h2> Who am I? </h2>
-          <p class="left-text">
-            I am a cheerful, reliable, team player and communicative person.
-            My passions include technological challenges and constantly improving myself through my own motivation
-            to learn as well as from those around me.
-          </p>
-          <p class="left-text">
-            I am a software engineer and developer with a varied background.
-            My experience pulls from studying and working in a lot of different fields.
-          </p>
-          <p class="left-text">
-            There is nothing in this world I admire more than the ability to beat the security of the known and go beyond the comfort.
-            Over the past few years, business culture has grown in importance and new approaches to work have developed.
-            Through my experience and determination, I know I can contribute to any company.
-          </p>
-        </div>
-      </div>
-      <hr id="professional-objectives" class="section-separator">
-      <!-- Professional Objectives -->
-      <div class="row row-centered">
-        <div class="col-xs-6 col-centered col-min col-section">
-          <h2> Professional Objectives </h2>
-          <p class="left-text">
-            As a developer, not only do I aim to strengthen my projects, but also my abilities in general,
-            taking every opportunity to learn and grow personally and professionally.
-          </p>
-          <p class="left-text">
-            I am always thinking of wonderful ideas. However, an idea is worthless if I am not able to execute it correctly.
-            Instead, I would rather be able to run an idea to the best of my ability than spend the precious hours thinking of mind-boggling ideas.
-          </p>
-          <p class="left-text">
-            Recently, I was able to specialize in Android, Kotlin and Python.
-            However, throughout my career I have touched the entire Full-Stack, I like the idea of being able to create a complete product
-            on my own.
-          </p>
-          <p class="left-text">
-            I was given management tasks in which I was responsible for small projects and delegating work to my team. I was able to use agile methodologies,
-            such as <a href="https://en.wikipedia.org/wiki/Scrum_(software_development)" target="_blank">scrum</a>.
-            I have been recently more involved with engineering duties, but I am open to return to the management role
-            as knowing both worlds is crucial for future growth and improvement of myself and the company.
-          </p>
-        </div>
-        <div class="col-xs-6 col-centered col-min col-section">
-          <img src="img/professional-objectives.jpg" alt="Professionals Objectives" width="70%">
-          <span class="caption text-muted">My goal as a basketball player is to achieve beautiful dunks</span>
-        </div>
-      </div>
-      <hr id="education" class="section-separator">
-      <!-- Education section -->
-      <div class="row row-centered">
-        <div class="col-xs-8 col-centered col-section">
-          <h2> Education </h2>
-          <p class="left-text">
-            I am open to receiving new knowledge as I believe that one can never stop learning.
-            I have learned to, not only, appreciate those who teach and have taught me, but to also take initiative and self-teach.
-            I like new formats like MOOCs (for example Udacity Associate Android Developer)
-            and old ones like books (for example Clean Code). Following, a temporary line with my certified education:
-          </p>
-          <div class="timeline">
-              <div class="timeline-entry">
-              <div class="timeline-entry-title"> Kotlin for Android Developers </div>
-                <div class="timeline-entry-date"> 2018 </div>
-                <div class="timeline-entry-button">
-                  <button data-label1="More" data-label2="Less">More</button>
-                </div>
-                <div class="timeline-entry-summary">
-                <p>
-                  Essential course for those who want to land on this language supported by Google to develop Android Apps.
-                  I recommend this course if you are an Android developer and already have some basic knowledge of Kotlin.
-                  Congratulations to <a href="https://antonioleiva.com/" target="_blank">Antonio Leiva</a>, for his natural vocation to teach with such dedication and enthusiasm.
-                  Check out the content of the course <a href="https://antonioleiva.com/online-course/" target="_blank">here</a>.
-                </p>
-                </div>
-              </div>
-              <div class="timeline-entry-separator"></div>
-              <div class="timeline-entry">
-              <div class="timeline-entry-title"> Associate Android Developer </div>
-                <div class="timeline-entry-date"> 2017 </div>
-                <div class="timeline-entry-button">
-                  <button data-label1="More" data-label2="Less">More</button>
-                </div>
-                <div class="timeline-entry-summary">
-                <p>
-                  The content of this <a href="https://www.udacity.com/course/associate-android-developer-fast-track--nd818" target="_blank">Udacity program</a>
-                  is the perfect introduction to the world of Android for someone with my background.
-                  It has an estimated duration of four months and is oriented to be examined at the end to achieve a certification.
-                  It has individual tutors and several very interesting projects.
-                  Check out my <a href="https://www.credential.net/c22yg4nt" target="_blank">Associate Android Developer Certification</a> by Google.
-                </p>
-                </div>
-              </div>
-              <div class="timeline-entry-separator"></div>
-              <div class="timeline-entry">
-                <div class="timeline-entry-title"> CITIUS Program </div>
-                <div class="timeline-entry-date"> 2015 </div>
-                <div class="timeline-entry-button">
-                  <button data-label1="More" data-label2="Less">More</button>
-                </div>
-                <div class="timeline-entry-summary">
-                <p>
-                  Program at the Autonomous University of Madrid. The main objective of the CITIUS program is to complete the training
-                  of recent university graduates. It is focused on providing useful transverse skills in the business world.
-                  I did this program while working full-time, so I was able to apply my new knowledge in my work environment.
-                  It has several subjects available, each one of three weeks duration. I chose the following:
-                  <br>
-                  <ul>
-                    <li>Leadership Skills (Psychology and Sociology faculty): focused on improving leadership skills as a factor of integration and cohesion of the force.</li>
-                    <li>Successful Presentations - The Art of Public Speaking (Psychology and Sociology faculty): focused on improving the skills related to the art of public speaking.</li>
-                    <li>Team Management - The Coach Leader (Psychology and Sociology faculty): focused on improving leadership skills and coaching.</li>
-                  </ul>
-                </p>
-                </div>
-              </div>
-              <div class="timeline-entry-separator"></div>
-              <div class="timeline-entry">
-                <div class="timeline-entry-title"> Degree in Telecommunications Engineering </div>
-                <div class="timeline-entry-date"> 2010 - 2014 </div>
-                <div class="timeline-entry-button">
-                  <button data-label1="More" data-label2="Less">More</button>
-                </div>
-                <div class="timeline-entry-summary">
-                <p>
-                  Bachelor degree at the <a href="https://www.ugr.es/en/" target="_blank">University of Granada</a>.
-                  With the mention in the <a href="https://en.wikipedia.org/wiki/Telematics" target="_blank">telematics</a> specialty.
-                  I highlight the great vision that provides from the engineering point of view, providing me with a
-                  great knowledge from electronic to software. You can check the
-                  <a href="http://grados.ugr.es/telecomunicacion/pages/infoacademica/estudios" target="_blank">curriculum of the program</a>.
-                </p>
-                </div>
-              </div>
-              <div class="timeline-entry-separator"></div>
-              <div class="timeline-entry">
-                <div class="timeline-entry-title"> High school </div>
-                <div class="timeline-entry-date"> 2008 - 2010 </div>
-                <div class="timeline-entry-button">
-                  <button data-label1="More" data-label2="Less">More</button>
-                </div>
-                <div class="timeline-entry-summary timeline-end">
-                <p>
-                  I went to high school in my town. I had very good teachers who helped me to orient my future. The type of program that
-                  I chose was technological that gives me knowledge like technical drawing, physics, electronic and software.
-                </p>
-                </div>
-              </div>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="site-heading">
+            <h3 class="unselectable" id="terminal-text"><span style="color:#1E90FF">|</span></h3>
           </div>
-
-        </div>
-      </div>
-      <hr id="professional-skills" class="section-separator">
-      <!-- Professional Skills section -->
-      <div class="row row-centered">
-        <div class="col-xs-6 col-centered col-min col-section">
-          <h2> Professional Skills </h2>
-          <p class="left-text">
-            I have skills and experience in a lot of different areas of the development process.
-            Here are some of the most important ones for me:
-          </p>
-          <ul class="left-text">
-            <li>Programming languages: Kotlin, Java, Python, Go, C, C++, SQL. (I have some experience in many more languages)</li>
-            <li>Platforms, frameworks and libraries: Android, Realm, JUnit, Mockito, Firebase, Facebook, Protocol buffers, Spring Boot, Micronaut, HornetQ, RabbitMQ, OpenDDS, RMI, CORBA, SWT, JavaFX, Eclipse RCP. (I have used a lot of libraries and frameworks sometime)</li>
-            <li>Software engineering knowledge: continuous integration and delivery (Github, Bamboo, Jenkins and Visual Studio Team Services suite), specification of requirements, design patterns, source code control systems (git, svn), clean code ♥ and agile software development methodologies.</li>
-          </ul>
-          <p class="left-text">
-            However, I believe that what really gives worth to an engineer are transverse skills such as:
-          </p>
-          <ul class="left-text">
-            <li>Being a team player.</li>
-            <li>Being communicative.</li>
-            <li>Being ethical and professional.</li>
-            <li>Having habits of thought.</li>
-            <li>Having personal work habits.</li>
-          </ul>
-        </div>
-        <div class="col-xs-6 col-centered col-min col-section">
-          <img src="img/professional-skills.jpeg" alt="Professional skills" width="70%">
-          <span class="caption text-muted"><q>You never fail until you stop trying</q></span>
-        </div>
-      </div>
-      <hr id="work-experience" class="section-separator">
-      <!-- Work experience section -->
-      <div class="row row-centered">
-        <div class="col-xs-8 col-centered col-section">
-          <h2> Work Experience </h2>
-          <p class="left-text">
-            I have worked on many interesting projects where I have learned a lot since I was in high school.
-            Professionally, I have been working for more than 4 years. Following,
-            I have highlighted my most interesting experiences:
-          </p>
-          <div class="timeline">
-              <div class="timeline-entry">
-              <div class="timeline-entry-title"> Freelance </div>
-                <div class="timeline-entry-date"> 2018 </div>
-                <div class="timeline-entry-button">
-                  <button data-label1="More" data-label2="Less">More</button>
-                </div>
-                <div class="timeline-entry-summary">
-                <p>
-                  I am prepared and confident to face specific projects alone or with remote groups.
-                  I have used several online platforms to let me know and also the networking in my city to get new projects.
-                  I have done three projects related to the development of Android applications so far. These applications needed the development of a backend (Python) or a backendless solution (Firebase).
-                </p>
-                <p>
-                  It is especially important for me to take care
-                  of the first stage of planning and details to approach the project.
-                  It is important that the client can see and understand the different stages of production and the
-                  time of each stage.
-                </p>
-                </div>
-              </div>
-              <div class="timeline-entry-separator"></div>
-              <div class="timeline-entry">
-              <div class="timeline-entry-title"> Trainingym </div>
-                <div class="timeline-entry-date"> 09/2017 - 09/2018 </div>
-                <div class="timeline-entry-button">
-                  <button data-label1="More" data-label2="Less">More</button>
-                </div>
-                <div class="timeline-entry-summary">
-                <p><q>Android software engineer</q></p>
-                <p>
-                  I was involved in several projects of the company. One of them was a very large legacy project with hundreds of derived
-                  applications in Google Play and millions of users around the world. Another was a new product to take care and improve people health
-                  who do not exercise often by proposing trainings at their level in their smartphone automatically.
-                  I was in charge of the development and implementation of the bluetooth protocol of the first wearable designed in Spain,
-                  implementing an isolated development kit, as well as its integration into
-                  the company's products such as the ones I mentioned before.
-                  This time I also was the team leader of several interns who helped us a lot and we had a good time.
-                </p>
-                <p>
-                  I highlight the following tasks and responsibilities:
-                  <br>
-                  <ul>
-                    <li>Design and implementation of continuous integration and continuous delivery system for Google Play with VSTS.
-                      Adding instrumented and unit tests to the pipe. All of this was for a complex scenario with a large legacy project with more than two hundred derived applications.</li>
-                    <li>Integration and synchronization of several Google services like Google Fit.</li>
-                    <li>Firebase Analytics integration.</li>
-                    <li>Migration of Fabric to Firebase Crashlytics.</li>
-                    <li>Design, development and integration of smartband SDK (full synchronization of data in local realm database and in our own cloud).</li>
-                    <li>Integration of NFC reader to read gym user cards.</li>
-                    <li>Modularization and refactoring of legacy projects into smaller projects (linking libraries using git submodules).</li>
-                    <li>Integration of Facebook services.</li>
-                    <li>Design and implementation of a push notification service with Firebase and Azure Notifications Hub.</li>
-                    <li>Design and implementation of a distributed communication system for thousands of devices connected at the same time with Azure IoT Hub (using MQTT beneath).</li>
-                    <li>Development of applications for tablets <q>kiosks</q>.</li>
-                  </ul>
-                </p>
-                </div>
-              </div>
-              <div class="timeline-entry-separator"></div>
-              <div class="timeline-entry">
-              <div class="timeline-entry-title"> GMV </div>
-                <div class="timeline-entry-date"> 02/2015 - 11/2016 </div>
-                <div class="timeline-entry-button">
-                  <button data-label1="More" data-label2="Less">More</button>
-                </div>
-                <div class="timeline-entry-summary">
-                <p><q>Satellite ground control software developer</q></p>
-                <p>
-                  I was able to work on the development of a new and very innovative product from scratch.
-                  I learned a lot with my workmates and team leader, whom I appreciate very much and I thank him for all the time he dedicated to me.
-                  Over time, more and more responsibilities were delegated to me, such as the control of the schedule,
-                  meeting of clients, documentation, user training, deliveries, management of people in my charge,
-                  specification of new requirements and features, choice of technologies and development lines.
-                </p>
-                <p>
-                  As a multinational company, I had workmates and customers from the whole world and the documentation and code
-                  followed international standards. The sector is a critical infrastructure and the product is expected to have the highest quality.
-                  Therefore, an important part of my work was to ensure the quality of software with unit tests, continuous integration, design patterns,
-                  simulation and validation environments. The technologies mainly involved were Java, Eclipse RCP, Python, Protocol buffers,
-                  CORBA, HornetQ, C++, JUnit.
-                </p>
-                </div>
-              </div>
-              <div class="timeline-entry-separator"></div>
-              <div class="timeline-entry">
-              <div class="timeline-entry-title"> IXION </div>
-                <div class="timeline-entry-date"> 11/2014 - 02/2015 </div>
-                <div class="timeline-entry-button">
-                  <button data-label1="More" data-label2="Less">More</button>
-                </div>
-                <div class="timeline-entry-summary">
-                <p><q>Autonomous mobile robotics software developer</q></p>
-                <p>
-                  I got an internship to work in the development of an <a href="https://vimeo.com/175511126" target="_blank">UGV</a>.
-                  The mission board system was a real-time linux and the programming language was mainly C and C++ for some specific features.
-                  Some of my tasks were:
-                  <br>
-                  <ul>
-                    <li>Implementation of new features.</li>
-                    <li>Maintenance and support.</li>
-                    <li>Integration with simulation systems.</li>
-                    <li>Implementation of new unit tests.</li>
-                  </ul>
-                </p>
-                </div>
-              </div>
-              <div class="timeline-entry-separator"></div>
-              <div class="timeline-entry">
-                <div class="timeline-entry-title"> University of Granada </div>
-                <div class="timeline-entry-date"> 05/2013 - 11/2013 </div>
-                <div class="timeline-entry-button">
-                  <button data-label1="More" data-label2="Less">More</button>
-                </div>
-                <div class="timeline-entry-summary timeline-end">
-                <p><q>Teaching innovation project software developer</q></p>
-                <p>
-                  This was my first professional experience with timing, remuneration and final users. I was still studying my university degree.
-                  The teachers designed the project idea and my job was to carry it out completely. Leaving me freely,
-                  I designed and developed the technical solution and the user experience. I was the leader of a team of two students. It was a web application and
-                  the technologies involved were PHP/MySQL for the backend and HTML/CSS/Javascript for the frontend.
-                </p>
-                </div>
-              </div>
-          </div>
-
         </div>
       </div>
     </div>
+  </header>
 
-    <hr>
+  <!-- Main Content -->
+  <ul class="menu-headers">
+    <li><a href="#who-am-I"> Who am I? </a></li>
+    <li><a href="#professional-objectives"> Professional Objectives </a></li>
+    <li><a href="#education"> Education </a></li>
+    <li><a href="#professional-skills"> Professional Skills </a></li>
+    <li><a href="#work-experience"> Work Experience </a></li>
+  </ul>
 
-    <!-- [_common] Footer START -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a href="https://github.com/nfdz" target="_blank">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/noe-fernandez/" target="_blank">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/nfdzls" target="_blank">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://medium.com/@nfdz" target="_blank">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted">Copyright &copy; Noé Fernández 2019</p>
-                </div>
+  <hr id="who-am-I" class="section-separator">
+
+  <div class="container">
+    <!-- About me section -->
+    <div class="row row-centered">
+      <div class="col-xs-6 col-centered col-min col-section">
+        <img src="img/stormtrooper-grayscale.png" alt="Me at work" width="70%">
+        <span class="caption text-muted">Me any day at work</span>
+      </div>
+      <div class="col-xs-6 col-centered col-min col-section">
+        <h2> Who am I? </h2>
+        <p class="left-text">
+          I am a cheerful, reliable, team player and communicative person.
+          My passions include technological challenges and constantly improving myself through my own motivation
+          to learn as well as from those around me.
+        </p>
+        <p class="left-text">
+          I am a software engineer and developer with a varied background.
+          My experience pulls from studying and working in a lot of different fields.
+        </p>
+        <p class="left-text">
+          There is nothing in this world I admire more than the ability to beat the security of the known and go beyond
+          the comfort.
+          Over the past few years, business culture has grown in importance and new approaches to work have developed.
+          Through my experience and determination, I know I can contribute to any company.
+        </p>
+      </div>
+    </div>
+    <hr id="professional-objectives" class="section-separator">
+    <!-- Professional Objectives -->
+    <div class="row row-centered">
+      <div class="col-xs-6 col-centered col-min col-section">
+        <h2> Professional Objectives </h2>
+        <p class="left-text">
+          As a developer, not only do I aim to strengthen my projects, but also my abilities in general,
+          taking every opportunity to learn and grow personally and professionally.
+        </p>
+        <p class="left-text">
+          I am always thinking of wonderful ideas. However, an idea is worthless if I am not able to execute it
+          correctly.
+          Instead, I would rather be able to run an idea to the best of my ability than spend the precious hours
+          thinking of mind-boggling ideas.
+        </p>
+        <p class="left-text">
+          Recently, I was able to specialize in Android, Kotlin and Python.
+          However, throughout my career I have touched the entire Full-Stack, I like the idea of being able to create a
+          complete product
+          on my own.
+        </p>
+        <p class="left-text">
+          I was given management tasks in which I was responsible for small projects and delegating work to my team. I
+          was able to use agile methodologies,
+          such as <a href="https://en.wikipedia.org/wiki/Scrum_(software_development)" target="_blank">scrum</a>.
+          I have been recently more involved with engineering duties, but I am open to return to the management role
+          as knowing both worlds is crucial for future growth and improvement of myself and the company.
+        </p>
+      </div>
+      <div class="col-xs-6 col-centered col-min col-section">
+        <img src="img/professional-objectives.jpg" alt="Professionals Objectives" width="70%">
+        <span class="caption text-muted">My goal as a basketball player is to achieve beautiful dunks</span>
+      </div>
+    </div>
+    <hr id="education" class="section-separator">
+    <!-- Education section -->
+    <div class="row row-centered">
+      <div class="col-xs-8 col-centered col-section">
+        <h2> Education </h2>
+        <p class="left-text">
+          I am open to receiving new knowledge as I believe that one can never stop learning.
+          I have learned to, not only, appreciate those who teach and have taught me, but to also take initiative and
+          self-teach.
+          I like new formats like MOOCs (for example Udacity Associate Android Developer)
+          and old ones like books (for example Clean Code). Following, a temporary line with my certified education:
+        </p>
+        <div class="timeline">
+          <div class="timeline-entry">
+            <div class="timeline-entry-title"> Kotlin for Android Developers </div>
+            <div class="timeline-entry-date"> 2018 </div>
+            <div class="timeline-entry-button">
+              <button data-label1="More" data-label2="Less">More</button>
             </div>
+            <div class="timeline-entry-summary">
+              <p>
+                Essential course for those who want to land on this language supported by Google to develop Android
+                Apps.
+                I recommend this course if you are an Android developer and already have some basic knowledge of Kotlin.
+                Congratulations to <a href="https://antonioleiva.com/" target="_blank">Antonio Leiva</a>, for his
+                natural vocation to teach with such dedication and enthusiasm.
+                Check out the content of the course <a href="https://antonioleiva.com/online-course/"
+                  target="_blank">here</a>.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-entry-separator"></div>
+          <div class="timeline-entry">
+            <div class="timeline-entry-title"> Associate Android Developer </div>
+            <div class="timeline-entry-date"> 2017 </div>
+            <div class="timeline-entry-button">
+              <button data-label1="More" data-label2="Less">More</button>
+            </div>
+            <div class="timeline-entry-summary">
+              <p>
+                The content of this <a
+                  href="https://www.udacity.com/course/associate-android-developer-fast-track--nd818"
+                  target="_blank">Udacity program</a>
+                is the perfect introduction to the world of Android for someone with my background.
+                It has an estimated duration of four months and is oriented to be examined at the end to achieve a
+                certification.
+                It has individual tutors and several very interesting projects.
+                Check out my <a href="https://www.credential.net/c22yg4nt" target="_blank">Associate Android Developer
+                  Certification</a> by Google.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-entry-separator"></div>
+          <div class="timeline-entry">
+            <div class="timeline-entry-title"> CITIUS Program </div>
+            <div class="timeline-entry-date"> 2015 </div>
+            <div class="timeline-entry-button">
+              <button data-label1="More" data-label2="Less">More</button>
+            </div>
+            <div class="timeline-entry-summary">
+              <p>
+                Program at the Autonomous University of Madrid. The main objective of the CITIUS program is to complete
+                the training
+                of recent university graduates. It is focused on providing useful transverse skills in the business
+                world.
+                I did this program while working full-time, so I was able to apply my new knowledge in my work
+                environment.
+                It has several subjects available, each one of three weeks duration. I chose the following:
+                <br>
+                <ul>
+                  <li>Leadership Skills (Psychology and Sociology faculty): focused on improving leadership skills as a
+                    factor of integration and cohesion of the force.</li>
+                  <li>Successful Presentations - The Art of Public Speaking (Psychology and Sociology faculty): focused
+                    on improving the skills related to the art of public speaking.</li>
+                  <li>Team Management - The Coach Leader (Psychology and Sociology faculty): focused on improving
+                    leadership skills and coaching.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <div class="timeline-entry-separator"></div>
+          <div class="timeline-entry">
+            <div class="timeline-entry-title"> Degree in Telecommunications Engineering </div>
+            <div class="timeline-entry-date"> 2010 - 2014 </div>
+            <div class="timeline-entry-button">
+              <button data-label1="More" data-label2="Less">More</button>
+            </div>
+            <div class="timeline-entry-summary">
+              <p>
+                Bachelor degree at the <a href="https://www.ugr.es/en/" target="_blank">University of Granada</a>.
+                With the mention in the <a href="https://en.wikipedia.org/wiki/Telematics"
+                  target="_blank">telematics</a> specialty.
+                I highlight the great vision that provides from the engineering point of view, providing me with a
+                great knowledge from electronic to software. You can check the
+                <a href="http://grados.ugr.es/telecomunicacion/pages/infoacademica/estudios" target="_blank">curriculum
+                  of the program</a>.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-entry-separator"></div>
+          <div class="timeline-entry">
+            <div class="timeline-entry-title"> High school </div>
+            <div class="timeline-entry-date"> 2008 - 2010 </div>
+            <div class="timeline-entry-button">
+              <button data-label1="More" data-label2="Less">More</button>
+            </div>
+            <div class="timeline-entry-summary timeline-end">
+              <p>
+                I went to high school in my town. I had very good teachers who helped me to orient my future. The type
+                of program that
+                I chose was technological that gives me knowledge like technical drawing, physics, electronic and
+                software.
+              </p>
+            </div>
+          </div>
         </div>
-    </footer>
-    <!-- [_common] Footer END -->
 
-    <!-- jQuery -->
-    <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+      </div>
+    </div>
+    <hr id="professional-skills" class="section-separator">
+    <!-- Professional Skills section -->
+    <div class="row row-centered">
+      <div class="col-xs-6 col-centered col-min col-section">
+        <h2> Professional Skills </h2>
+        <p class="left-text">
+          I have skills and experience in a lot of different areas of the development process.
+          Here are some of the most important ones for me:
+        </p>
+        <ul class="left-text">
+          <li>Programming languages: Kotlin, Java, Python, Go, C, C++, SQL. (I have some experience in many more
+            languages)</li>
+          <li>Platforms, frameworks and libraries: Android, Realm, JUnit, Mockito, Firebase, Facebook, Protocol buffers,
+            Spring Boot, Micronaut, HornetQ, RabbitMQ, OpenDDS, RMI, CORBA, SWT, JavaFX, Eclipse RCP. (I have used a lot
+            of libraries and frameworks sometime)</li>
+          <li>Software engineering knowledge: continuous integration and delivery (Github, Bamboo, Jenkins and Visual
+            Studio Team Services suite), specification of requirements, design patterns, source code control systems
+            (git, svn), clean code ♥ and agile software development methodologies.</li>
+        </ul>
+        <p class="left-text">
+          However, I believe that what really gives worth to an engineer are transverse skills such as:
+        </p>
+        <ul class="left-text">
+          <li>Being a team player.</li>
+          <li>Being communicative.</li>
+          <li>Being ethical and professional.</li>
+          <li>Having habits of thought.</li>
+          <li>Having personal work habits.</li>
+        </ul>
+      </div>
+      <div class="col-xs-6 col-centered col-min col-section">
+        <img src="img/professional-skills.jpeg" alt="Professional skills" width="70%">
+        <span class="caption text-muted"><q>You never fail until you stop trying</q></span>
+      </div>
+      <p></p>
+      <div class="row row-centered">
+        <img src="img/tags.png" alt="Kotlin, Java, Dart, Python, Flutter, Android, Firebase, IoT, Cloud" width="70%">
+        <span class="caption text-muted">Always learning and training, looking for the best solution for any
+          project</span>
+      </div>
+    </div>
+    <hr id="work-experience" class="section-separator">
+    <!-- Work experience section -->
+    <div class="row row-centered">
+      <div class="col-xs-8 col-centered col-section">
+        <h2> Work Experience </h2>
+        <p class="left-text">
+          I have worked on many interesting projects where I have learned a lot since I was in high school.
+          Professionally, I have been working for more than 4 years. Following,
+          I have highlighted my most interesting experiences:
+        </p>
+        <div class="timeline">
+          <div class="timeline-entry">
+            <div class="timeline-entry-title"> Freelance </div>
+            <div class="timeline-entry-date"> 2018 </div>
+            <div class="timeline-entry-button">
+              <button data-label1="More" data-label2="Less">More</button>
+            </div>
+            <div class="timeline-entry-summary">
+              <p>
+                I am prepared and confident to face specific projects alone or with remote groups.
+                I have used several online platforms to let me know and also the networking in my city to get new
+                projects.
+                I have done three projects related to the development of Android applications so far. These applications
+                needed the development of a backend (Python) or a backendless solution (Firebase).
+              </p>
+              <p>
+                It is especially important for me to take care
+                of the first stage of planning and details to approach the project.
+                It is important that the client can see and understand the different stages of production and the
+                time of each stage.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-entry-separator"></div>
+          <div class="timeline-entry">
+            <div class="timeline-entry-title"> Trainingym </div>
+            <div class="timeline-entry-date"> 09/2017 - 09/2018 </div>
+            <div class="timeline-entry-button">
+              <button data-label1="More" data-label2="Less">More</button>
+            </div>
+            <div class="timeline-entry-summary">
+              <p><q>Android software engineer</q></p>
+              <p>
+                I was involved in several projects of the company. One of them was a very large legacy project with
+                hundreds of derived
+                applications in Google Play and millions of users around the world. Another was a new product to take
+                care and improve people health
+                who do not exercise often by proposing trainings at their level in their smartphone automatically.
+                I was in charge of the development and implementation of the bluetooth protocol of the first wearable
+                designed in Spain,
+                implementing an isolated development kit, as well as its integration into
+                the company's products such as the ones I mentioned before.
+                This time I also was the team leader of several interns who helped us a lot and we had a good time.
+              </p>
+              <p>
+                I highlight the following tasks and responsibilities:
+                <br>
+                <ul>
+                  <li>Design and implementation of continuous integration and continuous delivery system for Google Play
+                    with VSTS.
+                    Adding instrumented and unit tests to the pipe. All of this was for a complex scenario with a large
+                    legacy project with more than two hundred derived applications.</li>
+                  <li>Integration and synchronization of several Google services like Google Fit.</li>
+                  <li>Firebase Analytics integration.</li>
+                  <li>Migration of Fabric to Firebase Crashlytics.</li>
+                  <li>Design, development and integration of smartband SDK (full synchronization of data in local realm
+                    database and in our own cloud).</li>
+                  <li>Integration of NFC reader to read gym user cards.</li>
+                  <li>Modularization and refactoring of legacy projects into smaller projects (linking libraries using
+                    git submodules).</li>
+                  <li>Integration of Facebook services.</li>
+                  <li>Design and implementation of a push notification service with Firebase and Azure Notifications
+                    Hub.</li>
+                  <li>Design and implementation of a distributed communication system for thousands of devices connected
+                    at the same time with Azure IoT Hub (using MQTT beneath).</li>
+                  <li>Development of applications for tablets <q>kiosks</q>.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <div class="timeline-entry-separator"></div>
+          <div class="timeline-entry">
+            <div class="timeline-entry-title"> GMV </div>
+            <div class="timeline-entry-date"> 02/2015 - 11/2016 </div>
+            <div class="timeline-entry-button">
+              <button data-label1="More" data-label2="Less">More</button>
+            </div>
+            <div class="timeline-entry-summary">
+              <p><q>Satellite ground control software developer</q></p>
+              <p>
+                I was able to work on the development of a new and very innovative product from scratch.
+                I learned a lot with my workmates and team leader, whom I appreciate very much and I thank him for all
+                the time he dedicated to me.
+                Over time, more and more responsibilities were delegated to me, such as the control of the schedule,
+                meeting of clients, documentation, user training, deliveries, management of people in my charge,
+                specification of new requirements and features, choice of technologies and development lines.
+              </p>
+              <p>
+                As a multinational company, I had workmates and customers from the whole world and the documentation and
+                code
+                followed international standards. The sector is a critical infrastructure and the product is expected to
+                have the highest quality.
+                Therefore, an important part of my work was to ensure the quality of software with unit tests,
+                continuous integration, design patterns,
+                simulation and validation environments. The technologies mainly involved were Java, Eclipse RCP, Python,
+                Protocol buffers,
+                CORBA, HornetQ, C++, JUnit.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-entry-separator"></div>
+          <div class="timeline-entry">
+            <div class="timeline-entry-title"> IXION </div>
+            <div class="timeline-entry-date"> 11/2014 - 02/2015 </div>
+            <div class="timeline-entry-button">
+              <button data-label1="More" data-label2="Less">More</button>
+            </div>
+            <div class="timeline-entry-summary">
+              <p><q>Autonomous mobile robotics software developer</q></p>
+              <p>
+                I got an internship to work in the development of an <a href="https://vimeo.com/175511126"
+                  target="_blank">UGV</a>.
+                The mission board system was a real-time linux and the programming language was mainly C and C++ for
+                some specific features.
+                Some of my tasks were:
+                <br>
+                <ul>
+                  <li>Implementation of new features.</li>
+                  <li>Maintenance and support.</li>
+                  <li>Integration with simulation systems.</li>
+                  <li>Implementation of new unit tests.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <div class="timeline-entry-separator"></div>
+          <div class="timeline-entry">
+            <div class="timeline-entry-title"> University of Granada </div>
+            <div class="timeline-entry-date"> 05/2013 - 11/2013 </div>
+            <div class="timeline-entry-button">
+              <button data-label1="More" data-label2="Less">More</button>
+            </div>
+            <div class="timeline-entry-summary timeline-end">
+              <p><q>Teaching innovation project software developer</q></p>
+              <p>
+                This was my first professional experience with timing, remuneration and final users. I was still
+                studying my university degree.
+                The teachers designed the project idea and my job was to carry it out completely. Leaving me freely,
+                I designed and developed the technical solution and the user experience. I was the leader of a team of
+                two students. It was a web application and
+                the technologies involved were PHP/MySQL for the backend and HTML/CSS/Javascript for the frontend.
+              </p>
+            </div>
+          </div>
+        </div>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+      </div>
+    </div>
+  </div>
 
-    <!-- Theme JavaScript -->
-    <script type="text/javascript" src="vendor/clean-blog/js/clean-blog.js"></script>
+  <hr>
 
-    <!-- Header terminal JavaScript -->
-    <script type="text/javascript" src="js/header-terminal.js"></script>
+  <!-- [_common] Footer START -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <ul class="list-inline text-center">
+            <li>
+              <a href="https://github.com/nfdz" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/noe-fernandez/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/nfdzls" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/@nfdz" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Noé Fernández 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- [_common] Footer END -->
 
-    <!-- Timeline JavaScript -->
-    <script type="text/javascript" src="js/timeline.js"></script>
+  <!-- jQuery -->
+  <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Theme JavaScript -->
+  <script type="text/javascript" src="vendor/clean-blog/js/clean-blog.js"></script>
+
+  <!-- Header terminal JavaScript -->
+  <script type="text/javascript" src="js/header-terminal.js"></script>
+
+  <!-- Timeline JavaScript -->
+  <script type="text/javascript" src="js/timeline.js"></script>
 
 </body>
 
