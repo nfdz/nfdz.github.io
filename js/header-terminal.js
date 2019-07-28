@@ -4,9 +4,9 @@
  * let read it.
  * TODO: implement pause and resume method
  */
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
   // check if there is a header terminal
-  if( $('#terminal-text').length ) {
+  if ($('#terminal-text').length) {
 
     // Writing/Erasing Frequency (in millis)
     var frequency = 60;
@@ -20,12 +20,12 @@ jQuery(document).ready(function($) {
       "Hi! Nice to meet you",
       "I am Noé Fernández",
       "I am a software engineer",
-      "I am a traveler",
-      "I am an Android developer",
       "I am a team player",
+      "I am an Android developer",
       "I am a software libre advocate",
+      "I am a Flutter developer",
+      "I am a traveler",
       "I am a Raspberry Pi and Arduino maker",
-      "I am a siesta advocate",
       "I am a science fiction movie critic",
       "I am a lover of live music"
     ];
@@ -36,9 +36,9 @@ jQuery(document).ready(function($) {
       40,
       30,
       40,
+      30,
       40,
-      40,
-      40,
+      30,
       40,
       30,
       30,
@@ -92,14 +92,14 @@ jQuery(document).ready(function($) {
             if (cursorOn == true) {
               // hide cursor
               cursorOn = false;
-              $('#terminal-text').html(function(i, origText){
+              $('#terminal-text').html(function (i, origText) {
                 var text = origText.substring(0, origText.length - cursor.length);
                 return text + hiddenCursor;
               });
             } else {
               // show cursor
               cursorOn = true;
-              $('#terminal-text').html(function(i, origText){
+              $('#terminal-text').html(function (i, origText) {
                 var text = origText.substring(0, origText.length - 6);
                 return text + cursor;
               });
