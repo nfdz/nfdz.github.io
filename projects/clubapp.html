@@ -189,8 +189,36 @@
                     </ul>
 
                     <h2 class="section-heading">Setup</h2>
+                    <ol>
+                        <li>Setup your Firebase project with your App Ids and Key hashes and copy your Firebase files
+                            <i>google-services.json</i> to <i>adminApp</i> and <i>memberApp</i> folder.</li>
+                        <li>Enable and install Firebase Functions. Functions are located in
+                            <i>firebase_functions_src</i> folder. </li>
+                        <li>Enable and setup Firebase Auth (email/password). You can customize messages about create
+                            account, restore password, etc. </li>
+                        <li>Enable administrators creating the user manually in Firebase Auth and you adding
+                            the email to a list in the Firebase Database. </li>
+                        <center><img class="img-responsive" src="img/clubapp/admin-setup.png" alt=""></center>
+                        <li>Replace everywhere <i>YOUR.MEMBER.APP.ID.HERE</i> and <i>YOUR.ADMIN.APP.ID.HERE</i> for your
+                            ids. (Android Studio: Ctlr + Shift + R) </li>
+                        <li>Replace in <i>memberApp</i> <i>Strings.xml</i> file next fields with your content:
+                            <i>app_name, club_about_content, club_contact_content, club_schedule_content,
+                                club_location_content, club_location_uri, club_location_uri_query, playlist_spotify_uri,
+                                club_facebook_url, club_facebook_url, event_url_host.</i></li>
+                        <li>Replace in <i>adminApp</i> <i>Strings.xml</i> file next fields with your content:
+                            <i>app_name.</i></li>
+                        <li>Replace in <i>memberApp</i> in drawable folder: <i>image_logo_land, image_logo_square,
+                                image_club_location.webp </i> (image of google maps with help to find your location).
+                        </li>
+                        <li>You can modify text and images of event categories. The categories are defined in
+                            <i>EventCategory</i> enum class in <i>commonLibrary</i> project. String texts and drawables
+                            are referred from there. </li>
+                        <li>You can modify app colors in <i>colors.xml</i> file in <i>membersApp</i> and
+                            <i>adminApp</i>.</li>
+                    </ol>
 
                     <h2 class="section-heading">Screenshots</h2>
+
                     <p>Some screenshots of an implementation in a real club:</p>
                     <center><img class="img-responsive" src="img/clubapp/screenshot_1.png" alt=""></center>
                     <center><img class="img-responsive" src="img/clubapp/screenshot_2.png" alt=""></center>
