@@ -7,7 +7,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124183504-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'UA-124183504-1');
   </script>
@@ -15,7 +15,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="This project is about a custom developed advertising stand for an important customer for a local fair. I have used Arduino and Raspberry Pi to do it. It has both hardware and software development.">
+  <meta name="description"
+    content="This project is about a custom developed advertising stand for an important customer for a local fair. I have used Arduino and Raspberry Pi to do it. It has both hardware and software development.">
   <meta name="keywords" content="Arduino,Raspberry Pi,Hardware,Software,Advertising">
   <meta name="author" content="Noé Fernández">
   <meta name="robots" content="index,follow">
@@ -33,7 +34,8 @@
 
   <!-- Custom Fonts -->
   <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -54,36 +56,37 @@
 
   <!-- [_common] Navigation START -->
   <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-      <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header page-scroll">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-                  <span class="sr-only">Toggle navigation</span>
-                  <i class="fa fa-bars"></i>
-              </button>
-              <a class="navbar-brand" href="../index.html">Noé Fernández</a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                  <li>
-                    <a href="../index.html">Home</a>
-                  </li>
-                  <li>
-                    <a href="index.html"> > Projects < </a>
-                  </li>
-                  <li>
-                    <a href="https://medium.com/@nfdz">Blog</a>
-                  </li>
-                  <li>
-                    <a href="#" data-toggle="modal" data-target="#contact-modal">Contact</a>
-                  </li>
-              </ul>
-          </div>
-          <!-- /.navbar-collapse -->
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="../index.html">Noé Fernández</a>
       </div>
-      <!-- /.container -->
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="index.html"> > Projects < </a> </li> <li>
+                <a href="https://medium.com/@nfdz">Blog</a>
+          </li>
+          <li>
+            <a href="../terminal/index.html">Terminal</a>
+          </li>
+          <li>
+            <a href="#" data-toggle="modal" data-target="#contact-modal">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
   </nav>
   <!-- [_common] Navigation END -->
 
@@ -98,44 +101,45 @@
         </div>
         <div class="modal-body text-center">
           <h4> Email </h4>
-          <h3><a class="contact-email" href="mailto:noe.fernandez@protonmail.com?Subject=Hello" target="_top"> noe.fernandez@protonmail.com </a></h3>
+          <h3><a class="contact-email" href="mailto:noe.fernandez@protonmail.com?Subject=Hello" target="_top">
+              noe.fernandez@protonmail.com </a></h3>
 
           <br>
           <h4></span> Networks </h4>
           <!-- THIS CONTENT MUST BE THE SAME THAT FOOTER CONTENT -->
           <ul class="list-inline text-center">
-              <li>
-                  <a href="https://github.com/nfdz" target="_blank">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
-              <li>
-                  <a href="https://www.linkedin.com/in/noe-fernandez/" target="_blank">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
-              <li>
-                  <a href="https://twitter.com/nfdzls" target="_blank">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
-              <li>
-                  <a href="https://medium.com/@nfdz" target="_blank">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
+            <li>
+              <a href="https://github.com/nfdz" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/noe-fernandez/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/nfdzls" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/@nfdz" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -146,130 +150,144 @@
   <!-- Page Header -->
   <!-- Set your background image for this header on the line below. -->
   <header class="intro-header" style="background-image: url('img/tree-expo/project-bg.jpg')">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                  <div class="post-heading">
-                      <h1>Interactive tree advertising stand</h1>
-                      <h2 class="subheading">Arduino and Raspberry Pi removing the limits of common advertising</h2>
-                  </div>
-              </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="post-heading">
+            <h1>Interactive tree advertising stand</h1>
+            <h2 class="subheading">Arduino and Raspberry Pi removing the limits of common advertising</h2>
           </div>
+        </div>
       </div>
+    </div>
   </header>
 
   <!-- Post Content -->
   <article>
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                  <p>
-                    This project is very exciting and fun. As a good Arduino and Raspberry Pi maker I am always willing
-                    and comfortable working with the hardware at the same time as with the software and this project is
-                    very interesting from this point of view.
-                  </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <p>
+            This project is very exciting and fun. As a good Arduino and Raspberry Pi maker I am always willing
+            and comfortable working with the hardware at the same time as with the software and this project is
+            very interesting from this point of view.
+          </p>
 
-                  <p>
-                    It is basically a custom developed advertising stand for an important customer for a local fair.
-                    The original idea was developed by a very creative graphic designer and he delegated to me the technical aspects of the development.
-                  </p>
+          <p>
+            It is basically a custom developed advertising stand for an important customer for a local fair.
+            The original idea was developed by a very creative graphic designer and he delegated to me the technical
+            aspects of the development.
+          </p>
 
-                  <p>
-                    The goal was to develop a very tall advertising stand that was seen from throughout the fair and invite
-                    people to interact with it to get more information. The proposed design was a tree where its leafs were
-                    illuminated boxes with brands, a television screen in the trunk of the tree that showed more information
-                    and some touch panels with the brands around the trunk.
-                  </p>
+          <p>
+            The goal was to develop a very tall advertising stand that was seen from throughout the fair and invite
+            people to interact with it to get more information. The proposed design was a tree where its leafs were
+            illuminated boxes with brands, a television screen in the trunk of the tree that showed more information
+            and some touch panels with the brands around the trunk.
+          </p>
 
-                  <h2 class="section-heading">Concept</h2>
+          <h2 class="section-heading">Concept</h2>
 
-                  <p>
-                    The design as you can see is very well detailed and in my opinion correct. Technically it is very feasible
-                    to implement and it is possible easily observe the different elements that will compound the tree.
-                  </p>
+          <p>
+            The design as you can see is very well detailed and in my opinion correct. Technically it is very feasible
+            to implement and it is possible easily observe the different elements that will compound the tree.
+          </p>
 
-                  <p>
-                    The specifications are as follows:
-                  </p>
-                  <ul>
-                    <li>The display should invite you to touch the panels in the standby mode.</li>
-                    <li>When someone touches a button, it must turn on the associated leaf-box and play the informative video on the screen.
-                      It must also turn off the last illuminated leaf-box if there is one.</li>
-                    <li>There must be a safety margin between valid interactions in order to avoid changing videos repeatedly in short intervals.</li>
-                    <li>When the informational video is finished, the leaf-box must be turned off and the screen must again invite to touch the panels.</li>
-                    <li>It must have an automatic mode, so if it is a long time without interactions it will start to illuminate the
-                      leaf-boxes and play informative videos automatically.</li>
-                    <li>The material used must fit the budget of the project since the tree is one more element of the stand and should not spend all the resources.</li>
-                    <li>The main components and boards must be redundant.</li>
-                  </ul>
+          <p>
+            The specifications are as follows:
+          </p>
+          <ul>
+            <li>The display should invite you to touch the panels in the standby mode.</li>
+            <li>When someone touches a button, it must turn on the associated leaf-box and play the informative video on
+              the screen.
+              It must also turn off the last illuminated leaf-box if there is one.</li>
+            <li>There must be a safety margin between valid interactions in order to avoid changing videos repeatedly in
+              short intervals.</li>
+            <li>When the informational video is finished, the leaf-box must be turned off and the screen must again
+              invite to touch the panels.</li>
+            <li>It must have an automatic mode, so if it is a long time without interactions it will start to illuminate
+              the
+              leaf-boxes and play informative videos automatically.</li>
+            <li>The material used must fit the budget of the project since the tree is one more element of the stand and
+              should not spend all the resources.</li>
+            <li>The main components and boards must be redundant.</li>
+          </ul>
 
-                  <p>
-                    After analyzing it from a technical point of view, we came to the conclusion that the project will consist of:
-                  </p>
-                  <ul>
-                    <li>A custom made wooden structure with boxes with the brands. This point did not come within my tasks and therefore I will skip it here.</li>
-                    <li>Several relays connected on one side to the bulbs (which will be quite powerful) and an AC power supply,
-                      and on the other side to an Arduino board that will be the controller of the relay.</li>
-                    <li>Several touch panels connected to an Arduino board that will monitor the input.</li>
-                    <li>A large full HD television screen connected by HDMI to a Raspberry Pi board that will play the videos.</li>
-                  </ul>
+          <p>
+            After analyzing it from a technical point of view, we came to the conclusion that the project will consist
+            of:
+          </p>
+          <ul>
+            <li>A custom made wooden structure with boxes with the brands. This point did not come within my tasks and
+              therefore I will skip it here.</li>
+            <li>Several relays connected on one side to the bulbs (which will be quite powerful) and an AC power supply,
+              and on the other side to an Arduino board that will be the controller of the relay.</li>
+            <li>Several touch panels connected to an Arduino board that will monitor the input.</li>
+            <li>A large full HD television screen connected by HDMI to a Raspberry Pi board that will play the videos.
+            </li>
+          </ul>
 
-                  <img class="img-responsive" src="img/tree-expo/scheme.png" alt="">
-                  <span class="caption text-muted">Concept scheme</span>
+          <img class="img-responsive" src="img/tree-expo/scheme.png" alt="">
+          <span class="caption text-muted">Concept scheme</span>
 
-                  <h2 class="section-heading">Implementation</h2>
+          <h2 class="section-heading">Implementation</h2>
 
-                  <p>
-                    The Arduino board chosen as the controller was the
-                    <a href="https://www.arduino.cc/en/Main/arduinoBoardMega" target="_blank">MEGA</a> version
-                    because we needed the maximum number of possible digital inputs and outputs (this board has 54) since at first it
-                    was not known the exact number of products that customer wanted to advertise and the difference of price is not important.
-                  </p>
+          <p>
+            The Arduino board chosen as the controller was the
+            <a href="https://www.arduino.cc/en/Main/arduinoBoardMega" target="_blank">MEGA</a> version
+            because we needed the maximum number of possible digital inputs and outputs (this board has 54) since at
+            first it
+            was not known the exact number of products that customer wanted to advertise and the difference of price is
+            not important.
+          </p>
 
-                  <p>
-                    I also had other Arduinos in my workshop with which I could do experiments and try things (in the images you can see an
-                    Arduino Leonardo that was very interesting because this model can simulate an USB keyboard).
-                  </p>
+          <p>
+            I also had other Arduinos in my workshop with which I could do experiments and try things (in the images you
+            can see an
+            Arduino Leonardo that was very interesting because this model can simulate an USB keyboard).
+          </p>
 
-                  <p>
-                    The chosen Raspberry Pi model was the Model B. This choice was simply because we had several in the workshop
-                    and was quite enough for the project.
-                  </p>
+          <p>
+            The chosen Raspberry Pi model was the Model B. This choice was simply because we had several in the workshop
+            and was quite enough for the project.
+          </p>
 
-                  <p>
-                    The resulting board is of small size and can be concealed in the 'roots' of the tree.
-                  </p>
+          <p>
+            The resulting board is of small size and can be concealed in the 'roots' of the tree.
+          </p>
 
-                  <img class="img-responsive" src="img/tree-expo/tree-board.jpeg" alt="">
-                  <span class="caption text-muted">Board with chosen components</span>
+          <img class="img-responsive" src="img/tree-expo/tree-board.jpeg" alt="">
+          <span class="caption text-muted">Board with chosen components</span>
 
-                  <h3>Touch panels</h3>
+          <h3>Touch panels</h3>
 
-                  <p>
-                    To make interactive touch panels we rely on the typical capacitive sensors that are very well documented
-                    and are very easy to do. Basically it consists of a few resistors, capacitors, conductive material and some tin.
-                  </p>
+          <p>
+            To make interactive touch panels we rely on the typical capacitive sensors that are very well documented
+            and are very easy to do. Basically it consists of a few resistors, capacitors, conductive material and some
+            tin.
+          </p>
 
-                  <center><img class="img-responsive" src="img/tree-expo/CapSense.gif" alt=""></center>
-                  <span class="caption text-muted">Capacitive sensor scheme</span>
+          <center><img class="img-responsive" src="img/tree-expo/CapSense.gif" alt=""></center>
+          <span class="caption text-muted">Capacitive sensor scheme</span>
 
-                  <p>
-                    I recommend reading the official Arduino
-                    <a href="https://playground.arduino.cc/Main/CapacitiveSensor" target="_blank">website</a> about it
-                    to understand how it works and how to use it in any project.
-                  </p>
+          <p>
+            I recommend reading the official Arduino
+            <a href="https://playground.arduino.cc/Main/CapacitiveSensor" target="_blank">website</a> about it
+            to understand how it works and how to use it in any project.
+          </p>
 
-                  <div class="video-responsive">
-                    <iframe src="https://www.youtube.com/embed/BHQPqQ_5ulc" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                  <span class="caption text-muted">Capacitive sensor example video</span>
+          <div class="video-responsive">
+            <iframe src="https://www.youtube.com/embed/BHQPqQ_5ulc" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <span class="caption text-muted">Capacitive sensor example video</span>
 
-                  <p>
-                    There is an Arduino software library to use that deal with all the underlying complexity so from the software
-                    point of view it was also a good choice. For example, to define a sensor using this library and
-                    read its input only the following code is needed:
-                  </p>
-                  <pre><code>
+          <p>
+            There is an Arduino software library to use that deal with all the underlying complexity so from the
+            software
+            point of view it was also a good choice. For example, to define a sensor using this library and
+            read its input only the following code is needed:
+          </p>
+          <pre><code>
 CapacitiveSensor sensor = CapacitiveSensor(14,15);
 long total =  sensor.capacitiveSensor(30);
 if (total > SENSOR_THRESHOLD)
@@ -278,63 +296,71 @@ if (total > SENSOR_THRESHOLD)
 }
                   </code></pre>
 
-                  <h3>Relay and light bulbs</h3>
+          <h3>Relay and light bulbs</h3>
 
-                  <p>
-                    To control the high voltage circuit with the Arduino board and thus turn on the bulbs was used two eight
-                    channel DC 5V relay module. These relays are very easy to use, economical and reliable.
-                  </p>
+          <p>
+            To control the high voltage circuit with the Arduino board and thus turn on the bulbs was used two eight
+            channel DC 5V relay module. These relays are very easy to use, economical and reliable.
+          </p>
 
-                  <center><img class="img-responsive" src="img/tree-expo/relays.jpg" alt=""></center>
-                  <span class="caption text-muted">Eight channel DC 5V relay module</span>
+          <center><img class="img-responsive" src="img/tree-expo/relays.jpg" alt=""></center>
+          <span class="caption text-muted">Eight channel DC 5V relay module</span>
 
-                  <p>
-                    From the software point of view it is only necessary to set LOW/HIGH a digital output pin of the Arduino board. For example:
-                  </p>
-                  <pre><code>
+          <p>
+            From the software point of view it is only necessary to set LOW/HIGH a digital output pin of the Arduino
+            board. For example:
+          </p>
+          <pre><code>
 digitalWrite(outputs[selectedBrand], HIGH);
                   </code></pre>
 
-                  <h3>Communication between Arduino and Raspberry Pi</h3>
+          <h3>Communication between Arduino and Raspberry Pi</h3>
 
-                  <p>
-                    Communication is done via the USB connection. When Arduino turn on a leaf-box, it must send an order to the serial port.
-                    Raspberry Pi must be listening and reading this port in an infinite loop to process all the video playback orders that it receives.
-                  </p>
+          <p>
+            Communication is done via the USB connection. When Arduino turn on a leaf-box, it must send an order to the
+            serial port.
+            Raspberry Pi must be listening and reading this port in an infinite loop to process all the video playback
+            orders that it receives.
+          </p>
 
-                  <p>
-                    For example, to send the order to play video number one, the following code must be executed in Arduino:
-                  </p>
-                  <pre><code>
+          <p>
+            For example, to send the order to play video number one, the following code must be executed in Arduino:
+          </p>
+          <pre><code>
 Serial.begin(9600);
 Serial.print("SELECT_1\n");
                   </code></pre>
-                  <p>
-                    And the following in Raspberry Pi:
-                  </p>
-                  <pre><code>
+          <p>
+            And the following in Raspberry Pi:
+          </p>
+          <pre><code>
 ser = serial.Serial(usbPath, 9600)
 selection = ser.readline()
 if "SELECT_1" in selection:
   // do something
                   </code></pre>
 
-                  <h3>TV screen with informative videos</h3>
+          <h3>TV screen with informative videos</h3>
 
-                  <p>
-                    The Raspberry Pi program that plays the videos and reads the orders that come from Arduino is written in Python.
-                    I have based on the player <a href="https://github.com/jbaiter/pyomxplayer" target="_blank">pyomxplayer</a>
-                    that it is based on <a href="https://github.com/huceke/omxplayer" target="_blank">omxplayer</a> (pyomxplayer is a Python wrapper).
-                  </p>
+          <p>
+            The Raspberry Pi program that plays the videos and reads the orders that come from Arduino is written in
+            Python.
+            I have based on the player <a href="https://github.com/jbaiter/pyomxplayer" target="_blank">pyomxplayer</a>
+            that it is based on <a href="https://github.com/huceke/omxplayer" target="_blank">omxplayer</a> (pyomxplayer
+            is a Python wrapper).
+          </p>
 
-                  <p>
-                    I just had to extend it, removing a lot of functionality that I did not need (like the playback control interface)
-                    and adding the desired behavior by default (full screen, looping of the standby video, etc). In the main thread it
-                    listens the serial port to receive the orders of Arduino and executes them. For example, to play the informative
-                    video number one would invoke the following method:
-                  </p>
+          <p>
+            I just had to extend it, removing a lot of functionality that I did not need (like the playback control
+            interface)
+            and adding the desired behavior by default (full screen, looping of the standby video, etc). In the main
+            thread it
+            listens the serial port to receive the orders of Arduino and executes them. For example, to play the
+            informative
+            video number one would invoke the following method:
+          </p>
 
-                  <pre><code>
+          <pre><code>
 def select_1(self):
   if self.selected == 1:
     return;
@@ -345,75 +371,78 @@ def select_1(self):
   self.schedStandby(40)
                   </code></pre>
 
-                  <h2 class="section-heading">Conclusion</h2>
+          <h2 class="section-heading">Conclusion</h2>
 
-                  <p>
-                    The result of this project was successful. Both the customer and my intermediate friends were happy.
-                    I personally was happy to participate in it.
-                  </p>
+          <p>
+            The result of this project was successful. Both the customer and my intermediate friends were happy.
+            I personally was happy to participate in it.
+          </p>
 
-                  <p>
-                    Jobs involving software and hardware are very entertaining challenges to perform.
-                    I am delighted to work with Arduino and Raspberry Pi boards and I will do it again as soon as I have a chance.
-                  </p>
+          <p>
+            Jobs involving software and hardware are very entertaining challenges to perform.
+            I am delighted to work with Arduino and Raspberry Pi boards and I will do it again as soon as I have a
+            chance.
+          </p>
 
-                  <center><img class="img-responsive" src="img/tree-expo/tree.jpeg" alt=""></center>
-                  <span class="caption text-muted">Photo of the tree in operation</span>
+          <center><img class="img-responsive" src="img/tree-expo/tree.jpeg" alt=""></center>
+          <span class="caption text-muted">Photo of the tree in operation</span>
 
-              </div>
-          </div>
+        </div>
       </div>
+    </div>
   </article>
 
   <hr>
 
-  <center><a href="index.html"><h3> ↩ More Projects </h3></a></center>
+  <center><a href="index.html">
+      <h3> ↩ More Projects </h3>
+    </a></center>
 
   <hr>
 
   <!-- [_common] Footer START -->
   <footer>
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                  <ul class="list-inline text-center">
-                      <li>
-                          <a href="https://github.com/nfdz" target="_blank">
-                              <span class="fa-stack fa-lg">
-                                  <i class="fa fa-circle fa-stack-2x"></i>
-                                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                              </span>
-                          </a>
-                      </li>
-                      <li>
-                          <a href="https://www.linkedin.com/in/noe-fernandez/" target="_blank">
-                              <span class="fa-stack fa-lg">
-                                  <i class="fa fa-circle fa-stack-2x"></i>
-                                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                              </span>
-                          </a>
-                      </li>
-                      <li>
-                          <a href="https://twitter.com/nfdzls" target="_blank">
-                              <span class="fa-stack fa-lg">
-                                  <i class="fa fa-circle fa-stack-2x"></i>
-                                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                              </span>
-                          </a>
-                      </li>
-                      <li>
-                          <a href="https://medium.com/@nfdz" target="_blank">
-                              <span class="fa-stack fa-lg">
-                                  <i class="fa fa-circle fa-stack-2x"></i>
-                                  <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
-                              </span>
-                          </a>
-                      </li>
-                  </ul>
-                  <p class="copyright text-muted">Copyright &copy; Noé Fernández 2019</p>
-              </div>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <ul class="list-inline text-center">
+            <li>
+              <a href="https://github.com/nfdz" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/noe-fernandez/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/nfdzls" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/@nfdz" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Noé Fernández 2019</p>
+        </div>
       </div>
+    </div>
   </footer>
   <!-- [_common] Footer END -->
 

@@ -34,6 +34,25 @@
 .scrollTop-button:active {
   background-color: #555;
 }
+.terminal-button {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #1E90FF; /* <- This is the accent color */
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+  border-top-right-radius: 10px;
+  font-family: 'Nunito', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+.terminal-button:active {
+  background-color: #555;
+}
 .row-centered {
   text-align:center;
 }

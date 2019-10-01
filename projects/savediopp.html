@@ -7,7 +7,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124183504-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'UA-124183504-1');
   </script>
@@ -15,7 +15,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="This project is about a bookmarking tool for Android. I have used the famous libraries Realm and Retrofit to do it.">
+  <meta name="description"
+    content="This project is about a bookmarking tool for Android. I have used the famous libraries Realm and Retrofit to do it.">
   <meta name="keywords" content="Android,Java,Realm,Retrofit,bookmarks,bookmarking tool">
   <meta name="author" content="Noé Fernández">
   <meta name="robots" content="index,follow">
@@ -33,7 +34,8 @@
 
   <!-- Custom Fonts -->
   <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -54,36 +56,37 @@
 
   <!-- [_common] Navigation START -->
   <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-      <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header page-scroll">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-                  <span class="sr-only">Toggle navigation</span>
-                  <i class="fa fa-bars"></i>
-              </button>
-              <a class="navbar-brand" href="../index.html">Noé Fernández</a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                  <li>
-                    <a href="../index.html">Home</a>
-                  </li>
-                  <li>
-                    <a href="index.html"> > Projects < </a>
-                  </li>
-                  <li>
-                    <a href="https://medium.com/@nfdz">Blog</a>
-                  </li>
-                  <li>
-                    <a href="#" data-toggle="modal" data-target="#contact-modal">Contact</a>
-                  </li>
-              </ul>
-          </div>
-          <!-- /.navbar-collapse -->
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="../index.html">Noé Fernández</a>
       </div>
-      <!-- /.container -->
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="index.html"> > Projects < </a> </li> <li>
+                <a href="https://medium.com/@nfdz">Blog</a>
+          </li>
+          <li>
+            <a href="../terminal/index.html">Terminal</a>
+          </li>
+          <li>
+            <a href="#" data-toggle="modal" data-target="#contact-modal">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
   </nav>
   <!-- [_common] Navigation END -->
 
@@ -98,44 +101,45 @@
         </div>
         <div class="modal-body text-center">
           <h4> Email </h4>
-          <h3><a class="contact-email" href="mailto:noe.fernandez@protonmail.com?Subject=Hello" target="_top"> noe.fernandez@protonmail.com </a></h3>
+          <h3><a class="contact-email" href="mailto:noe.fernandez@protonmail.com?Subject=Hello" target="_top">
+              noe.fernandez@protonmail.com </a></h3>
 
           <br>
           <h4></span> Networks </h4>
           <!-- THIS CONTENT MUST BE THE SAME THAT FOOTER CONTENT -->
           <ul class="list-inline text-center">
-              <li>
-                  <a href="https://github.com/nfdz" target="_blank">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
-              <li>
-                  <a href="https://www.linkedin.com/in/noe-fernandez/" target="_blank">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
-              <li>
-                  <a href="https://twitter.com/nfdzls" target="_blank">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
-              <li>
-                  <a href="https://medium.com/@nfdz" target="_blank">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
+            <li>
+              <a href="https://github.com/nfdz" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/noe-fernandez/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/nfdzls" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/@nfdz" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -146,149 +150,184 @@
   <!-- Page Header -->
   <!-- Set your background image for this header on the line below. -->
   <header class="intro-header" style="background-image: url('img/savediopp/project-bg.jpg')">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                  <div class="post-heading">
-                      <h1>Saved.io++</h1>
-                      <h2 class="subheading">Android application bookmarking tool</h2>
-                  </div>
-              </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="post-heading">
+            <h1>Saved.io++</h1>
+            <h2 class="subheading">Android application bookmarking tool</h2>
           </div>
+        </div>
       </div>
+    </div>
   </header>
 
   <!-- Post Content -->
   <article>
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                  <p>
-                    This application eases access to a web management service for bookmarks.
-                    This web service is very simple to use and provides several interesting features.
-                    I use this service for the management of my bookmarks and I am happy with it.
-                  </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <p>
+            This application eases access to a web management service for bookmarks.
+            This web service is very simple to use and provides several interesting features.
+            I use this service for the management of my bookmarks and I am happy with it.
+          </p>
 
-                  <p>
-                    However, this service does not always provide a good user experience on mobile devices,
-                    depending on the browser that the user uses and how he uses it. Saved.io++ comes to solve these problems,
-                    offering a consistent user experience and adding a few more features that are useful on mobile devices. For example:
-                  </p>
+          <p>
+            However, this service does not always provide a good user experience on mobile devices,
+            depending on the browser that the user uses and how he uses it. Saved.io++ comes to solve these problems,
+            offering a consistent user experience and adding a few more features that are useful on mobile devices. For
+            example:
+          </p>
 
-                  <ul>
-                    <li>Offline mode (bookmarks stored locally) and online mode (bookmarks are synchronized with Saved.io). </li>
-                    <li>Smart favorites. Most used bookmarks are marked automatically.</li>
-                    <li>Search engine.</li>
-                    <li>Widget of favorite bookmarks.</li>
-                    <li>Import/Export from/to a file.</li>
-                  </ul>
+          <ul>
+            <li>Offline mode (bookmarks stored locally) and online mode (bookmarks are synchronized with Saved.io).
+            </li>
+            <li>Smart favorites. Most used bookmarks are marked automatically.</li>
+            <li>Search engine.</li>
+            <li>Widget of favorite bookmarks.</li>
+            <li>Import/Export from/to a file.</li>
+          </ul>
 
-                  <h2 class="section-heading">Motivation</h2>
+          <h2 class="section-heading">Motivation</h2>
 
-                  <p>
-                    This is the first native android application that I have developed completely from scratch by myself,
-                    from the specifications until its publication in the store. I wanted to develop applications on my own in order
-                    to be ready for the exam and to continue gaining experience in this field. I was very interested in to develop a
-                    real application that uses a third-party service with open API, and even more if I can improve the user experience
-                    on mobiles even if only a little.
-                  </p>
+          <p>
+            This is the first native android application that I have developed completely from scratch by myself,
+            from the specifications until its publication in the store. I wanted to develop applications on my own in
+            order
+            to be ready for the exam and to continue gaining experience in this field. I was very interested in to
+            develop a
+            real application that uses a third-party service with open API, and even more if I can improve the user
+            experience
+            on mobiles even if only a little.
+          </p>
 
-                  <p>
-                    The development was a challenge in many aspects. I used a variety of third-party libraries that I did not know,
-                    I had listened a lot and was very keen to use, for example <i>Realm</i> and <i>Retrofit</i>.
-                  </p>
+          <p>
+            The development was a challenge in many aspects. I used a variety of third-party libraries that I did not
+            know,
+            I had listened a lot and was very keen to use, for example <i>Realm</i> and <i>Retrofit</i>.
+          </p>
 
-                  <h2 class="section-heading">Concept</h2>
+          <h2 class="section-heading">Concept</h2>
 
-                  <p>
-                    The main objective was to ensure that all the functionality could be accessed from the application.
-                    On the one hand, it is very important that the application is tiny, pretty and easy to use, to justify its usefulness
-                    on mobile devices instead of using the original web site. On the other hand, I was interested in integrate with the
-                    android system with features such as a widget with favorite bookmarks, the option to add bookmark in the menu to
-                    share a link from any application, synchronize automatically and manually with the web service and notify changes using system notifications.
-                  </p>
+          <p>
+            The main objective was to ensure that all the functionality could be accessed from the application.
+            On the one hand, it is very important that the application is tiny, pretty and easy to use, to justify its
+            usefulness
+            on mobile devices instead of using the original web site. On the other hand, I was interested in integrate
+            with the
+            android system with features such as a widget with favorite bookmarks, the option to add bookmark in the
+            menu to
+            share a link from any application, synchronize automatically and manually with the web service and notify
+            changes using system notifications.
+          </p>
 
-                  <h2 class="section-heading">Implementation</h2>
+          <h2 class="section-heading">Implementation</h2>
 
-                  <p>
-                    The application has five activities (<i>MainActivity</i>, <i>IntroActivity</i>, <i>SettingsActivity</i>, <i>NewBookmarkActivity</i> and <i>EditBookmarkActivity</i>),
-                    three services (<i>SyncIntentService</i>, <i>SyncFirebaseJobService</i> and <i>FavoritesWidgetRemoteViewsService</i>) and one receiver (<i>FavoritesWidgetProvider</i>).
-                  </p>
+          <p>
+            The application has five activities (<i>MainActivity</i>, <i>IntroActivity</i>, <i>SettingsActivity</i>,
+            <i>NewBookmarkActivity</i> and <i>EditBookmarkActivity</i>),
+            three services (<i>SyncIntentService</i>, <i>SyncFirebaseJobService</i> and
+            <i>FavoritesWidgetRemoteViewsService</i>) and one receiver (<i>FavoritesWidgetProvider</i>).
+          </p>
 
-                  <p>
-                    <i>MainActivity</i> provides access to all bookmarks, by using <i>RecyclerView</i>. It allows perform any operation over them using its buttons or gestures.
-                    It allows filtering by list using a side menu thanks to the use of <i>NavigationView</i> and <i>DrawerLayout</i>.
-                    It also allows the immediate synchronization of the bookmarks manually using <i>SwipeRefreshLayout</i>.
-                  </p>
+          <p>
+            <i>MainActivity</i> provides access to all bookmarks, by using <i>RecyclerView</i>. It allows perform any
+            operation over them using its buttons or gestures.
+            It allows filtering by list using a side menu thanks to the use of <i>NavigationView</i> and
+            <i>DrawerLayout</i>.
+            It also allows the immediate synchronization of the bookmarks manually using <i>SwipeRefreshLayout</i>.
+          </p>
 
-                  <img class="img-responsive" src="img/savediopp/MainActivityScreenshots.png" alt="">
-                  <span class="caption text-muted">MainActivity screenshots</span>
+          <img class="img-responsive" src="img/savediopp/MainActivityScreenshots.png" alt="">
+          <span class="caption text-muted">MainActivity screenshots</span>
 
-                  <p>
-                    <i>IntroActivity</i> displays start information the first time application is launched after installing it.
-                    It is interesting to communicate the user clearly and simply application modes (offline and online) and if user wants to
-                    link the application with his web service account.
-                  </p>
+          <p>
+            <i>IntroActivity</i> displays start information the first time application is launched after installing it.
+            It is interesting to communicate the user clearly and simply application modes (offline and online) and if
+            user wants to
+            link the application with his web service account.
+          </p>
 
-                  <p>
-                    <i>SettingsActivity</i> just shows <i>SettingsFragment</i>. It is a standard settings fragment because it extends <i>PreferenceFragment</i>.
-                    It has to be careful to perform actions on stored bookmarks if user changes values of the preferences that affects it like
-                    change user web service account API. This also contains export and import operations. To do this it uses standard
-                    system activities to select files by using implicit intentions with actions (<i>OPEN_DOCUMENT</i> and
-                    <i>CREATE_DOCUMENT</i>).
-                  </p>
+          <p>
+            <i>SettingsActivity</i> just shows <i>SettingsFragment</i>. It is a standard settings fragment because it
+            extends <i>PreferenceFragment</i>.
+            It has to be careful to perform actions on stored bookmarks if user changes values of the preferences that
+            affects it like
+            change user web service account API. This also contains export and import operations. To do this it uses
+            standard
+            system activities to select files by using implicit intentions with actions (<i>OPEN_DOCUMENT</i> and
+            <i>CREATE_DOCUMENT</i>).
+          </p>
 
-                  <p>
-                    <i>NewBookmarkActivity</i> and <i>EditBookmarkActivity</i> share almost all the code and layouts because the functionality that they offer
-                    are close to be the same. The only differences between the two are the actions taken when creating the activity
-                    and pressing the ok button. <i>NewBookmarkActivity</i> has to check if the intent contains an URL (from share option) and
-                    saves it as new bookmark. <i>EditBookmarkActivity</i> has to retrieve information about the bookmark to edit and replace it instead create a new one.
-                  </p>
+          <p>
+            <i>NewBookmarkActivity</i> and <i>EditBookmarkActivity</i> share almost all the code and layouts because the
+            functionality that they offer
+            are close to be the same. The only differences between the two are the actions taken when creating the
+            activity
+            and pressing the ok button. <i>NewBookmarkActivity</i> has to check if the intent contains an URL (from
+            share option) and
+            saves it as new bookmark. <i>EditBookmarkActivity</i> has to retrieve information about the bookmark to edit
+            and replace it instead create a new one.
+          </p>
 
-                  <center><img class="img-responsive" src="img/savediopp/New-Edit-BookmarkScreenshot.png" alt="" width="250px"></center>
-                  <span class="caption text-muted">NewBookmarkActivity/EditBookmarkActivity screenshot</span>
+          <center><img class="img-responsive" src="img/savediopp/New-Edit-BookmarkScreenshot.png" alt="" width="250px">
+          </center>
+          <span class="caption text-muted">NewBookmarkActivity/EditBookmarkActivity screenshot</span>
 
-                  <p>
-                    <i>SyncIntentService</i> is very important as it performs the synchronization of web service bookmarks in a background thread.
-                    This downloads and updates the stored bookmarks (deleting, creating and editing bookmarks) and notifies the changes
-                    (if there are) with a notification.
-                  </p>
+          <p>
+            <i>SyncIntentService</i> is very important as it performs the synchronization of web service bookmarks in a
+            background thread.
+            This downloads and updates the stored bookmarks (deleting, creating and editing bookmarks) and notifies the
+            changes
+            (if there are) with a notification.
+          </p>
 
-                  <p>
-                    <i>SyncFirebaseJobService</i> is periodically launched by <i>FirebaseJobDispatcher</i> and it has to check if it is necessary to
-                    synchronize the bookmarks with the web service. To do this simply check the last synchronization time and see if
-                    it is greater than the minimum allowed interval. If it is needed to synchronize bookmarks, it simply launch <i>SyncIntentService</i>.
-                  </p>
+          <p>
+            <i>SyncFirebaseJobService</i> is periodically launched by <i>FirebaseJobDispatcher</i> and it has to check
+            if it is necessary to
+            synchronize the bookmarks with the web service. To do this simply check the last synchronization time and
+            see if
+            it is greater than the minimum allowed interval. If it is needed to synchronize bookmarks, it simply launch
+            <i>SyncIntentService</i>.
+          </p>
 
-                  <p>
-                    <i>FavoritesWidgetRemoteViewsService</i> takes care of getting information about favorite bookmarks and providing
-                    views of each item in the Favorites widget list. All operations are done asynchronously because it extends
-                    <i>RemoteViewsService</i> and uses <i>RemoteViewsFactory</i>.
-                  </p>
+          <p>
+            <i>FavoritesWidgetRemoteViewsService</i> takes care of getting information about favorite bookmarks and
+            providing
+            views of each item in the Favorites widget list. All operations are done asynchronously because it extends
+            <i>RemoteViewsService</i> and uses <i>RemoteViewsFactory</i>.
+          </p>
 
-                  <p>
-                    <i>FavoritesWidgetProvider</i> provides the metadata, creates and updates the favorites widget. It extends <i>AppWidgetProvider</i> and receives and
-                    process the broadcast events of the system <i>APPWIDGET_UPDATE</i> and also a custom one <i>FAV_DATA_UPDATED</i>.
-                  </p>
+          <p>
+            <i>FavoritesWidgetProvider</i> provides the metadata, creates and updates the favorites widget. It extends
+            <i>AppWidgetProvider</i> and receives and
+            process the broadcast events of the system <i>APPWIDGET_UPDATE</i> and also a custom one
+            <i>FAV_DATA_UPDATED</i>.
+          </p>
 
-                  <center><img class="img-responsive" src="img/savediopp/WidgetScreenshot.png" width="250px" alt=""></center>
-                  <span class="caption text-muted">Widget screenshot</span>
+          <center><img class="img-responsive" src="img/savediopp/WidgetScreenshot.png" width="250px" alt=""></center>
+          <span class="caption text-muted">Widget screenshot</span>
 
-                  <h3>Synchronization</h3>
+          <h3>Synchronization</h3>
 
-                  <p>
-                    I think it is interesting to highlight how the data from the web service servers is retrieved. This process is very simple thanks to the fact
-                    that it has a very simple and well documented public API. It is possible to check it on its dedicated
-                    <a href="http://devapi.saved.io/" target="_blank">website</a>.
-                  </p>
+          <p>
+            I think it is interesting to highlight how the data from the web service servers is retrieved. This process
+            is very simple thanks to the fact
+            that it has a very simple and well documented public API. It is possible to check it on its dedicated
+            <a href="http://devapi.saved.io/" target="_blank">website</a>.
+          </p>
 
-                  <p>
-                    Basically, it is only necessary to 'translate' HTTP request and JSON response to java interfaces and POJO objects.
-                    This is thanks to libraries that do the rest of the work for me, in this case <i>Retrofit</i> and <i>Gson</i> respectively.
-                    All of this logic is defined in <i>SavedioAPI</i> (interface) and <i>BookmarkAPI</i> (class). For example, to get all the markers would be:
-                  </p>
+          <p>
+            Basically, it is only necessary to 'translate' HTTP request and JSON response to java interfaces and POJO
+            objects.
+            This is thanks to libraries that do the rest of the work for me, in this case <i>Retrofit</i> and
+            <i>Gson</i> respectively.
+            All of this logic is defined in <i>SavedioAPI</i> (interface) and <i>BookmarkAPI</i> (class). For example,
+            to get all the markers would be:
+          </p>
 
-                  <pre><code>
+          <pre><code>
 /**
 * Returns the most recent bookmarks at a time.
 * @param devKey Mandatory.
@@ -306,40 +345,40 @@ Call&lt;List&lt;BookmarkAPI&gt;&gt; retrieveAllBookmarks(@Query("devkey") String
                                              @Query("list") String list);
                   </code></pre>
 
-                  <h3>Libraries</h3>
-                  <p>The 3rd party software that I have used for the application are:</p>
-                  <ul>
-                    <li><a href="https://realm.io/" target="_blank">Realm</a>:
-                      A mobile platform and a replacement for SQLite and Core Data. For example:
-                    </li>
-                    <pre><code>
+          <h3>Libraries</h3>
+          <p>The 3rd party software that I have used for the application are:</p>
+          <ul>
+            <li><a href="https://realm.io/" target="_blank">Realm</a>:
+              A mobile platform and a replacement for SQLite and Core Data. For example:
+            </li>
+            <pre><code>
 Bookmark bookmark = realm.where(Bookmark.class)
                          .equalTo(Bookmark.FIELD_ID, bookmarkId)
                          .findFirst();
 bookmark.setFavorite(isFavorite);
                     </code></pre>
-                    <li><a href="http://square.github.io/picasso/" target="_blank">Picasso</a>:
-                      A powerful image downloading and caching library for Android. For example:
-                    </li>
-                    <pre><code>
+            <li><a href="http://square.github.io/picasso/" target="_blank">Picasso</a>:
+              A powerful image downloading and caching library for Android. For example:
+            </li>
+            <pre><code>
 Picasso.with(mContext)
        .load(faviconPath)
        .placeholder(noFavicon)
        .into(holder.mBookmarkFavicon);
                     </code></pre>
-                    <li><a href="http://jakewharton.github.io/butterknife/" target="_blank">Butter Knife</a>:
-                       Bind Android views and callbacks to fields and methods. For example:
-                    </li>
-                    <pre><code>
+            <li><a href="http://jakewharton.github.io/butterknife/" target="_blank">Butter Knife</a>:
+              Bind Android views and callbacks to fields and methods. For example:
+            </li>
+            <pre><code>
 @BindView(R.id.toolbar) Toolbar mToolbar;
                     </code></pre>
-                    <li><a href="https://github.com/google/gson" target="_blank">Gson</a>:
-                      A Java serialization/deserialization library to convert Java Objects into JSON and back.
-                    </li>
-                    <li><a href="https://github.com/square/retrofit" target="_blank">Retrofit</a>:
-                      Type-safe HTTP client for Android and Java. For example:
-                    </li>
-                    <pre><code>
+            <li><a href="https://github.com/google/gson" target="_blank">Gson</a>:
+              A Java serialization/deserialization library to convert Java Objects into JSON and back.
+            </li>
+            <li><a href="https://github.com/square/retrofit" target="_blank">Retrofit</a>:
+              Type-safe HTTP client for Android and Java. For example:
+            </li>
+            <pre><code>
 Gson gson = new GsonBuilder()
        .setLenient()
        .create();
@@ -349,12 +388,14 @@ Retrofit retrofit = new Retrofit.Builder()
        .build();
 mAPI = retrofit.create(SavedioAPI.class);
                     </code></pre>
-                    <li><a href="https://github.com/firebase/firebase-jobdispatcher-android" target="_blank">Firebase JobDispatcher</a>:
-                      A library for scheduling background jobs in your Android app.
-                      It provides a <i>JobScheduler</i>-compatible API that works on all recent versions of Android (API level 9+)
-                      that have Google Play services installed. For example:
-                    </li>
-                    <pre><code>
+            <li><a href="https://github.com/firebase/firebase-jobdispatcher-android" target="_blank">Firebase
+                JobDispatcher</a>:
+              A library for scheduling background jobs in your Android app.
+              It provides a <i>JobScheduler</i>-compatible API that works on all recent versions of Android (API level
+              9+)
+              that have Google Play services installed. For example:
+            </li>
+            <pre><code>
 Driver driver = new GooglePlayDriver(context);
 FirebaseJobDispatcher dispatcher = new FirebaseJobDispatcher(driver);
 Job syncJob = dispatcher.newJobBuilder()
@@ -370,100 +411,107 @@ Job syncJob = dispatcher.newJobBuilder()
        .build();
 dispatcher.schedule(syncJob);
                     </code></pre>
-                    <li><a href="https://github.com/apl-devs/AppIntro" target="_blank">AppIntro</a>:
-                      An Android Library that helps you make a cool intro for your app, like the ones in Google apps.
-                    </li>
-                    <li><a href="https://github.com/mancj/MaterialSearchBar" target="_blank">MaterialSearchBar</a>:
-                      Beautiful and easy to use library will help to add Lollipop Material Design SearchView in your project.
-                    </li>
-                    <li><a href="https://github.com/JakeWharton/timber" target="_blank">Timber</a>:
-                      A logger with a small, extensible API which provides utility on top of Android's normal Log class.
-                    </li>
+            <li><a href="https://github.com/apl-devs/AppIntro" target="_blank">AppIntro</a>:
+              An Android Library that helps you make a cool intro for your app, like the ones in Google apps.
+            </li>
+            <li><a href="https://github.com/mancj/MaterialSearchBar" target="_blank">MaterialSearchBar</a>:
+              Beautiful and easy to use library will help to add Lollipop Material Design SearchView in your project.
+            </li>
+            <li><a href="https://github.com/JakeWharton/timber" target="_blank">Timber</a>:
+              A logger with a small, extensible API which provides utility on top of Android's normal Log class.
+            </li>
 
-                  </ul>
+          </ul>
 
-                  <h2 class="section-heading">Conclusion</h2>
+          <h2 class="section-heading">Conclusion</h2>
 
-                  <p>
-                    Thanks to the development of this application I have been able to learn how to use some very interesting libraries.
-                    I also liked the work of developing it completely from scratch. The fact of publishing it in google play and
-                    having some users is very interesting from the educational point of view to learn the whole process of publishing,
-                    maintenance, support and update.
-                  </p>
+          <p>
+            Thanks to the development of this application I have been able to learn how to use some very interesting
+            libraries.
+            I also liked the work of developing it completely from scratch. The fact of publishing it in google play and
+            having some users is very interesting from the educational point of view to learn the whole process of
+            publishing,
+            maintenance, support and update.
+          </p>
 
-                  <p>
-                    Finally, I'm happy because I've been able to contribute my bit to the bookmark management service that I like and that respects my privacy, is open and free.
-                  </p>
+          <p>
+            Finally, I'm happy because I've been able to contribute my bit to the bookmark management service that I
+            like and that respects my privacy, is open and free.
+          </p>
 
-                  <p>
-                    I do not plan to add amazing features in the future, but feel free to contact me to suggest anything or report any bug.
-                  </p>
+          <p>
+            I do not plan to add amazing features in the future, but feel free to contact me to suggest anything or
+            report any bug.
+          </p>
 
-                  <p>
-                    The application is free software (GPLv3) and you can check the whole project in
-                    <a href="https://github.com/nfdz/saved.io-plus-plus" target="_blank">github</a>.
-                  </p>
+          <p>
+            The application is free software (GPLv3) and you can check the whole project in
+            <a href="https://github.com/nfdz/saved.io-plus-plus" target="_blank">github</a>.
+          </p>
 
-                  <h3>Download</h3>
+          <h3>Download</h3>
 
-                  <ul>
-                    <li><a href="https://play.google.com/store/apps/details?id=io.github.nfdz.savedio" target="_blank">Google Play</a></li>
-                    <li><a href="https://github.com/nfdz/saved.io-plus-plus/releases" target="_blank">Github</a></li>
-                  </ul>
-              </div>
-          </div>
+          <ul>
+            <li><a href="https://play.google.com/store/apps/details?id=io.github.nfdz.savedio" target="_blank">Google
+                Play</a></li>
+            <li><a href="https://github.com/nfdz/saved.io-plus-plus/releases" target="_blank">Github</a></li>
+          </ul>
+        </div>
       </div>
+    </div>
   </article>
 
   <hr>
 
-  <center><a href="index.html"><h3> ↩ More Projects </h3></a></center>
+  <center><a href="index.html">
+      <h3> ↩ More Projects </h3>
+    </a></center>
 
   <hr>
 
   <!-- [_common] Footer START -->
   <footer>
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                  <ul class="list-inline text-center">
-                      <li>
-                          <a href="https://github.com/nfdz" target="_blank">
-                              <span class="fa-stack fa-lg">
-                                  <i class="fa fa-circle fa-stack-2x"></i>
-                                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                              </span>
-                          </a>
-                      </li>
-                      <li>
-                          <a href="https://www.linkedin.com/in/noe-fernandez/" target="_blank">
-                              <span class="fa-stack fa-lg">
-                                  <i class="fa fa-circle fa-stack-2x"></i>
-                                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                              </span>
-                          </a>
-                      </li>
-                      <li>
-                          <a href="https://twitter.com/nfdzls" target="_blank">
-                              <span class="fa-stack fa-lg">
-                                  <i class="fa fa-circle fa-stack-2x"></i>
-                                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                              </span>
-                          </a>
-                      </li>
-                      <li>
-                          <a href="https://medium.com/@nfdz" target="_blank">
-                              <span class="fa-stack fa-lg">
-                                  <i class="fa fa-circle fa-stack-2x"></i>
-                                  <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
-                              </span>
-                          </a>
-                      </li>
-                  </ul>
-                  <p class="copyright text-muted">Copyright &copy; Noé Fernández 2019</p>
-              </div>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <ul class="list-inline text-center">
+            <li>
+              <a href="https://github.com/nfdz" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/noe-fernandez/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/nfdzls" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/@nfdz" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Noé Fernández 2019</p>
+        </div>
       </div>
+    </div>
   </footer>
   <!-- [_common] Footer END -->
 

@@ -7,7 +7,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124183504-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'UA-124183504-1');
   </script>
@@ -15,7 +15,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Library for dependency inversion in Java/Android using service locator pattern very easy to use and lightweight ">
+  <meta name="description"
+    content="Library for dependency inversion in Java/Android using service locator pattern very easy to use and lightweight ">
   <meta name="keywords" content="Java,Android,Library,Locator,Software,Jitpack,TDD,Tests">
   <meta name="author" content="Noé Fernández">
   <meta name="robots" content="index,follow">
@@ -33,7 +34,8 @@
 
   <!-- Custom Fonts -->
   <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -54,36 +56,37 @@
 
   <!-- [_common] Navigation START -->
   <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-      <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header page-scroll">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-                  <span class="sr-only">Toggle navigation</span>
-                  <i class="fa fa-bars"></i>
-              </button>
-              <a class="navbar-brand" href="../index.html">Noé Fernández</a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                  <li>
-                    <a href="../index.html">Home</a>
-                  </li>
-                  <li>
-                    <a href="index.html"> > Projects < </a>
-                  </li>
-                  <li>
-                    <a href="https://medium.com/@nfdz">Blog</a>
-                  </li>
-                  <li>
-                    <a href="#" data-toggle="modal" data-target="#contact-modal">Contact</a>
-                  </li>
-              </ul>
-          </div>
-          <!-- /.navbar-collapse -->
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="../index.html">Noé Fernández</a>
       </div>
-      <!-- /.container -->
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="index.html"> > Projects < </a> </li> <li>
+                <a href="https://medium.com/@nfdz">Blog</a>
+          </li>
+          <li>
+            <a href="../terminal/index.html">Terminal</a>
+          </li>
+          <li>
+            <a href="#" data-toggle="modal" data-target="#contact-modal">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
   </nav>
   <!-- [_common] Navigation END -->
 
@@ -98,44 +101,45 @@
         </div>
         <div class="modal-body text-center">
           <h4> Email </h4>
-          <h3><a class="contact-email" href="mailto:noe.fernandez@protonmail.com?Subject=Hello" target="_top"> noe.fernandez@protonmail.com </a></h3>
+          <h3><a class="contact-email" href="mailto:noe.fernandez@protonmail.com?Subject=Hello" target="_top">
+              noe.fernandez@protonmail.com </a></h3>
 
           <br>
           <h4></span> Networks </h4>
           <!-- THIS CONTENT MUST BE THE SAME THAT FOOTER CONTENT -->
           <ul class="list-inline text-center">
-              <li>
-                  <a href="https://github.com/nfdz" target="_blank">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
-              <li>
-                  <a href="https://www.linkedin.com/in/noe-fernandez/" target="_blank">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
-              <li>
-                  <a href="https://twitter.com/nfdzls" target="_blank">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
-              <li>
-                  <a href="https://medium.com/@nfdz" target="_blank">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
-                      </span>
-                  </a>
-              </li>
+            <li>
+              <a href="https://github.com/nfdz" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/noe-fernandez/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/nfdzls" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/@nfdz" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -146,89 +150,98 @@
   <!-- Page Header -->
   <!-- Set your background image for this header on the line below. -->
   <header class="intro-header" style="background-image: url('img/dependency-locator/project-bg.jpg')">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                  <div class="post-heading">
-                      <h1>Dependency Locator</h1>
-                      <h2 class="subheading">Dependency inversion using service locator pattern</h2>
-                  </div>
-              </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="post-heading">
+            <h1>Dependency Locator</h1>
+            <h2 class="subheading">Dependency inversion using service locator pattern</h2>
           </div>
+        </div>
       </div>
+    </div>
   </header>
 
   <!-- Post Content -->
   <article>
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-                  <p>
-                    Library for dependency inversion in Java/Android using service locator pattern very easy to use and lightweight.
-                    It was designed to be very quick to learn. With this library you have no excuse to not implement dependency inversion
-                    in your project from the first moment. It is very easy to use for those who have been using this design pattern in
-                    other frameworks and languages. I have avoided using the word 'Service' since this concept is linked to other types
-                    of functionalities in Android.
-                  </p>
+          <p>
+            Library for dependency inversion in Java/Android using service locator pattern very easy to use and
+            lightweight.
+            It was designed to be very quick to learn. With this library you have no excuse to not implement dependency
+            inversion
+            in your project from the first moment. It is very easy to use for those who have been using this design
+            pattern in
+            other frameworks and languages. I have avoided using the word 'Service' since this concept is linked to
+            other types
+            of functionalities in Android.
+          </p>
 
-                  <p>
-                    For the development of this library I have followed a <a href="https://en.wikipedia.org/wiki/Test-driven_development" target="_blank">Test-driven development</a>(TDD) process.
-                    I was very interested in creating a good battery of unit tests to ensure that it works well in any case
-                    as it is a critical piece of the software architecture.
-                  </p>
+          <p>
+            For the development of this library I have followed a <a
+              href="https://en.wikipedia.org/wiki/Test-driven_development" target="_blank">Test-driven
+              development</a>(TDD) process.
+            I was very interested in creating a good battery of unit tests to ensure that it works well in any case
+            as it is a critical piece of the software architecture.
+          </p>
 
-                  <p>
-                     The library is free software (Apache-2.0) and you can follow its development in
-                     <a href="https://github.com/nfdz/DependencyLocator" target="_blank">github</a>.
-                  </p>
+          <p>
+            The library is free software (Apache-2.0) and you can follow its development in
+            <a href="https://github.com/nfdz/DependencyLocator" target="_blank">github</a>.
+          </p>
 
-                  <h2 class="section-heading">How to use it</h2>
+          <h2 class="section-heading">How to use it</h2>
 
-                  <p>
-                    To use it you just have to do the following:
-                  </p>
+          <p>
+            To use it you just have to do the following:
+          </p>
 
-                  <ul>
-                    <li>Implement <i>Dependency</i> or <i>SingletonDependency</i> interface.</li>
-                    <li>Implement <i>DependencyProvider</i> that know how to create previous dependency.</li>
-                    <li>
-                      Supply these provider to <i>DependencyLocator</i> in some point before use the dependencies (for instance at the entry point of your application).
-                    <pre><code>
+          <ul>
+            <li>Implement <i>Dependency</i> or <i>SingletonDependency</i> interface.</li>
+            <li>Implement <i>DependencyProvider</i> that know how to create previous dependency.</li>
+            <li>
+              Supply these provider to <i>DependencyLocator</i> in some point before use the dependencies (for instance
+              at the entry point of your application).
+              <pre><code>
 DependencyLocator.provide(MyDependency.class, new MyDependencyProvider());
                     </code></pre>
-                    </li>
-                    <li>
-                      Locate this dependency where and when you want to use:
-                      <pre><code>
+            </li>
+            <li>
+              Locate this dependency where and when you want to use:
+              <pre><code>
 MyDependency dependency = (MyDependency)DependencyLocator.locate(MyDependency.class);
                       </code></pre>
-                    </li>
-                    <li>
-                      Optional: Release this dependency when you do not need use it anymore:
-                      <pre><code>
+            </li>
+            <li>
+              Optional: Release this dependency when you do not need use it anymore:
+              <pre><code>
 DependencyLocator.release(dependency);
                       </code></pre>
-                    </li>
-                  </ul>
+            </li>
+          </ul>
 
-                  <h3>Demo project</h3>
+          <h3>Demo project</h3>
 
-                  <p>
-                    There is a <a href="https://github.com/nfdz/DependencyLocator/tree/master/Demo" target="_blank">java demo project</a> with three dependencies, one of them nested.
-                    You can check it if you want to understand how it works.
-                  </p>
+          <p>
+            There is a <a href="https://github.com/nfdz/DependencyLocator/tree/master/Demo" target="_blank">java demo
+              project</a> with three dependencies, one of them nested.
+            You can check it if you want to understand how it works.
+          </p>
 
-                  <h2 class="section-heading">Download</h2>
+          <h2 class="section-heading">Download</h2>
 
-                  <h3>Jitpack</h3>
+          <h3>Jitpack</h3>
 
-                  <p>
-                    It is very use integrate this library in your project as a dependency of your build system thanks to Jitpack.
-                    If you use gradle, you just have to add the following in your '<i>build.gradle</i>' file:
-                  </p>
+          <p>
+            It is very use integrate this library in your project as a dependency of your build system thanks to
+            Jitpack.
+            If you use gradle, you just have to add the following in your '<i>build.gradle</i>' file:
+          </p>
 
-                  <pre><code>
+          <pre><code>
 allprojects {
   repositories {
   ...
@@ -241,92 +254,101 @@ dependencies {
 }
                   </code></pre>
 
-                  <p>
-                    Jitpack works with several build systems, please checkout the
-                    <a href="https://jitpack.io/docs/BUILDING/" target="_blank">documentation</a> if you need help with yours.
-                  </p>
+          <p>
+            Jitpack works with several build systems, please checkout the
+            <a href="https://jitpack.io/docs/BUILDING/" target="_blank">documentation</a> if you need help with yours.
+          </p>
 
-                  <h3>Manual JAR</h3>
+          <h3>Manual JAR</h3>
 
-                  <p>
-                    You can download library JAR file from github <a href="https://github.com/nfdz/DependencyLocator/releases" target="_blank">releases</a> webpage of the repository.
-                  </p>
+          <p>
+            You can download library JAR file from github <a href="https://github.com/nfdz/DependencyLocator/releases"
+              target="_blank">releases</a> webpage of the repository.
+          </p>
 
-                  <h2 class="section-heading">Unit tests</h2>
+          <h2 class="section-heading">Unit tests</h2>
 
-                  <p>
-                    I have created two dependencies with several tags and flags to use in the tests. These are <i>MyDependency</i> and <i>MySingletonDependency</i>.
-                  </p>
+          <p>
+            I have created two dependencies with several tags and flags to use in the tests. These are
+            <i>MyDependency</i> and <i>MySingletonDependency</i>.
+          </p>
 
-                  <p>
-                    The sets of tests are the following:
-                  </p>
+          <p>
+            The sets of tests are the following:
+          </p>
 
-                  <ul>
-                    <li>
-                      <a href="https://github.com/nfdz/DependencyLocator/blob/master/Library/src/test/java/io/github/nfdz/dependencylocator/MainTest.java" target="_blank">MainTest</a>:
-                      It checks that basic functionality and behaviour is correct. Tests are <i>testProvideSingletonDependency</i>, <i>testProvideDependency</i>, <i>testOverrideProvider</i> and <i>testOverrideUsedProvider</i>.
-                    </li>
-                    <li>
-                      <a href="https://github.com/nfdz/DependencyLocator/blob/master/Library/src/test/java/io/github/nfdz/dependencylocator/MultithreadingTest.java" target="_blank">MultithreadingTest</a>:
-                      It checks that multi-threading behaviour is correct. Tests are <i>testProvideDependency</i> and <i>testProvideSingletonDependency</i>.
-                    </li>
-                  </ul>
+          <ul>
+            <li>
+              <a href="https://github.com/nfdz/DependencyLocator/blob/master/Library/src/test/java/io/github/nfdz/dependencylocator/MainTest.java"
+                target="_blank">MainTest</a>:
+              It checks that basic functionality and behaviour is correct. Tests are
+              <i>testProvideSingletonDependency</i>, <i>testProvideDependency</i>, <i>testOverrideProvider</i> and
+              <i>testOverrideUsedProvider</i>.
+            </li>
+            <li>
+              <a href="https://github.com/nfdz/DependencyLocator/blob/master/Library/src/test/java/io/github/nfdz/dependencylocator/MultithreadingTest.java"
+                target="_blank">MultithreadingTest</a>:
+              It checks that multi-threading behaviour is correct. Tests are <i>testProvideDependency</i> and
+              <i>testProvideSingletonDependency</i>.
+            </li>
+          </ul>
 
-              </div>
-          </div>
+        </div>
       </div>
+    </div>
   </article>
 
   <hr>
 
-  <center><a href="index.html"><h3> ↩ More Projects </h3></a></center>
+  <center><a href="index.html">
+      <h3> ↩ More Projects </h3>
+    </a></center>
 
   <hr>
 
   <!-- [_common] Footer START -->
   <footer>
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                  <ul class="list-inline text-center">
-                      <li>
-                          <a href="https://github.com/nfdz" target="_blank">
-                              <span class="fa-stack fa-lg">
-                                  <i class="fa fa-circle fa-stack-2x"></i>
-                                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                              </span>
-                          </a>
-                      </li>
-                      <li>
-                          <a href="https://www.linkedin.com/in/noe-fernandez/" target="_blank">
-                              <span class="fa-stack fa-lg">
-                                  <i class="fa fa-circle fa-stack-2x"></i>
-                                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                              </span>
-                          </a>
-                      </li>
-                      <li>
-                          <a href="https://twitter.com/nfdzls" target="_blank">
-                              <span class="fa-stack fa-lg">
-                                  <i class="fa fa-circle fa-stack-2x"></i>
-                                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                              </span>
-                          </a>
-                      </li>
-                      <li>
-                          <a href="https://medium.com/@nfdz" target="_blank">
-                              <span class="fa-stack fa-lg">
-                                  <i class="fa fa-circle fa-stack-2x"></i>
-                                  <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
-                              </span>
-                          </a>
-                      </li>
-                  </ul>
-                  <p class="copyright text-muted">Copyright &copy; Noé Fernández 2019</p>
-              </div>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <ul class="list-inline text-center">
+            <li>
+              <a href="https://github.com/nfdz" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/noe-fernandez/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/nfdzls" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/@nfdz" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Noé Fernández 2019</p>
+        </div>
       </div>
+    </div>
   </footer>
   <!-- [_common] Footer END -->
 
