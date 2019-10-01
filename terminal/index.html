@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<!-- MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM -->
+<!-- MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM -->
+<!-- MMMMm .oMMMMMMMN: sMMMM+,,,,,,,,,,/MMMMM -->
+<!-- MMMMh   -dMMMMMN  /MMMN  `MMMMMMMMMMMMMM -->
+<!-- MMMMh  `  oMMMMN  /MMMN  .MMMMMMMMMMMMMM -->
+<!-- MMMMh  oy` .dMMN  /MMMN  `yyhhhhhNMMMMMM -->
+<!-- MMMMh  oMN+  +NN  /MMMN   .......-MMMMMM -->
+<!-- MMMMh  oMMMd. .y  /MMMN  .MMMMMMMMMMMMMM -->
+<!-- MMMMh  oMMMMMo    /MMMN  .MMMMMMMMMMMMMM -->
+<!-- MMMMd  oMMMMMMm-  /MMMN  .MMMMMMMMMMMMMM -->
+<!-- MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM -->
+<!-- MMMMMMMMMMMNMMMMMMMMMMNMMMMMMMMMMMMMMMMM -->
+<!-- MMMMm  `++++/-  .sMMMMM,,,,,,,,.  /NMMMM -->
+<!-- MMMMm  .MMMMMMN+  :MMMMMMMMMMm- `yMMMMMM -->
+<!-- MMMMm  .MMMMMMMM:  yMMMMMMMMs` :mMMMMMMM -->
+<!-- MMMMm  .MMMMMMMMo  oMMMMMMN:  sMMMMMMMMM -->
+<!-- MMMMm  .MMMMMMMM-  hMMMMMh` -mMMMMMMMMMM -->
+<!-- MMMMm  .MMMMMMd:  /MMMMN/  +MMMMMMMMMMMM -->
+<!-- MMMMm  `::::-`  -yMMMMN.  .:::::::/dMMMM -->
+<!-- MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM -->
+<!-- MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM -->
+
+<!-- Welcome! Thanks for your visit! -->
+<!-- You can find me at: noe.fernandez@protonmail.com -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124183504-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-124183504-1');
+  </script>
+  
   <meta charset="UTF-8">
-  <title>terminal_resume_app</title>
+  <meta name="description"
+    content="This is a Flutter web experiment you will discover interesting things about me and know me better.">
+  <meta name="keywords"
+    content="engineer,flutter,terminal,webapp,software,developer,android,android developer,software engineer,resume,projects">
+  <meta name="author" content="Noé Fernández">
+  <meta name="robots" content="index,follow">
+  
+  <title>Terminal - nfdz</title>
+  
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
+  <link rel="icon" type="image/png" href="../img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="../img/favicon-16x16.png" sizes="16x16" />
+  
 </head>
 <body>
   <script src="main.dart.js" type="application/javascript"></script>
-   
+  
 <script type="text/javascript">
 // Disable TAB key
 var KEYCODE_TAB = 9;
@@ -20,6 +67,7 @@ document.addEventListener('keydown', function(e) {
 // Communication throug stdout
 var GO_BACK_CODE = "[GO_BACK]";
 var GO_GITHUB_CODE = "[GO_GITHUB]";
+var githubUrl = "https://github.com/nfdz/TerminalResumeWeb";
 
 var _log = console.log,
     _warn = console.warn,
@@ -28,6 +76,9 @@ var _log = console.log,
 console.log = function() {
     if (arguments[0] == GO_BACK_CODE) {
         window.history.back();
+    } else if (arguments[0] == GO_GITHUB_CODE) {
+        var win = window.open(githubUrl, '_blank');
+        win.focus();
     }
     return _log.apply(console, arguments);
 };
@@ -35,6 +86,9 @@ console.log = function() {
 console.warn = function() {
     if (arguments[0] == GO_BACK_CODE) {
         window.history.back();
+    } else if (arguments[0] == GO_GITHUB_CODE) {
+        var win = window.open(githubUrl, '_blank');
+        win.focus();
     }
     return _warn.apply(console, arguments);
 };
@@ -42,9 +96,13 @@ console.warn = function() {
 console.error = function() {
     if (arguments[0] == GO_BACK_CODE) {
         window.history.back();
+    } else if (arguments[0] == GO_GITHUB_CODE) {
+        var win = window.open(githubUrl, '_blank');
+        win.focus();
     }
     return _error.apply(console, arguments);
 };
 </script>
+
 </body>
 </html>
