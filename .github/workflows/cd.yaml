@@ -1,0 +1,39 @@
+name: CD
+
+on:
+  push:
+    paths-ignore:
+      - "README.md"
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  release:
+    if: "(github.ref == 'refs/heads/master')"
+    name: Release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hugo setup
+        uses: peaceiris/actions-hugo@v2.6.0
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup workspace
+        run: git submodule update --init --recursive
+      - name: Config Git
+        env:
+          githubActor: ${{ github.actor }}
+          githubRepository: ${{ github.repository }}
+        run: git config --global user.name "$githubActor" && git config --global user.email "$githubActor@$githubRepository"
+      - name: Get release branch ready
+        run: git fetch origin && git push origin --delete "release/master" && git checkout -b "release/master" && git push -f origin "release/master"
+      - name: Build
+        run: hugo
+      - name: Prepare
+        run: rm -rf docs && mv public docs
+      - name: Publish
+        env:
+          githubActor: ${{ github.actor }}
+        run: git add docs && git commit -m "[CD] Release" && git push origin HEAD:release/master
+        
