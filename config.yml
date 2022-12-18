@@ -47,7 +47,7 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "This is my personal website"
+    description: "Software engineer specialized in mobile technologies. This website is about apps, experiments, ventures, and other random projects."
     author: nfdz
     # author: ["Me", "You"] # multiple authors
 

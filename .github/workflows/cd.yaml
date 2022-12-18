@@ -32,7 +32,5 @@ jobs:
       - name: Prepare
         run: rm -rf docs && mv public docs
       - name: Publish
-        env:
-          githubActor: ${{ github.actor }}
         run: git add docs && git commit -m "[CD] Release" && git push origin HEAD:release/master
         
