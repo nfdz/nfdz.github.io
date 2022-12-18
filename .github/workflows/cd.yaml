@@ -24,8 +24,7 @@ jobs:
       - name: Config Git
         env:
           githubActor: ${{ github.actor }}
-          githubRepository: ${{ github.repository }}
-        run: git config --global user.name "$githubActor" && git config --global user.email "$githubActor@$githubRepository"
+        run: git config --global user.name "$githubActor" && git config --global user.email "$githubActor@github"
       - name: Get release branch ready
         run: git fetch origin && git push origin --delete "release/master" && git checkout -b "release/master" && git push -f origin "release/master"
       - name: Build
