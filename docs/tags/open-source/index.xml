@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>open-source on nfdz</title>
-    <link>/tags/open-source/</link>
+    <link>https://nfdz.io/tags/open-source/</link>
     <description>Recent content in open-source on nfdz</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 06 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://nfdz.io/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Club App</title>
-      <link>/posts/2019/clubapp/</link>
+      <link>https://nfdz.io/posts/2019/clubapp/</link>
       <pubDate>Tue, 06 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/posts/2019/clubapp/</guid>
+      <guid>https://nfdz.io/posts/2019/clubapp/</guid>
       <description>A platform to manage events, courses, members and loyalty</description>
     </item>
     
     <item>
       <title>Findoor</title>
-      <link>/posts/2018/findoor/</link>
+      <link>https://nfdz.io/posts/2018/findoor/</link>
       <pubDate>Thu, 05 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/posts/2018/findoor/</guid>
+      <guid>https://nfdz.io/posts/2018/findoor/</guid>
       <description>Android Wi-Fi Navigation</description>
     </item>
     
     <item>
       <title>Permissions Watcher</title>
-      <link>/posts/2018/permissions-watcher/</link>
+      <link>https://nfdz.io/posts/2018/permissions-watcher/</link>
       <pubDate>Sat, 20 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/posts/2018/permissions-watcher/</guid>
+      <guid>https://nfdz.io/posts/2018/permissions-watcher/</guid>
       <description>Monitor application permissions</description>
     </item>
     
     <item>
       <title>Dependency Locator</title>
-      <link>/posts/2017/dependency-locator/</link>
+      <link>https://nfdz.io/posts/2017/dependency-locator/</link>
       <pubDate>Sun, 12 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>/posts/2017/dependency-locator/</guid>
+      <guid>https://nfdz.io/posts/2017/dependency-locator/</guid>
       <description>Java service locator pattern implementation</description>
     </item>
     
     <item>
       <title>Foco</title>
-      <link>/posts/2017/foco/</link>
+      <link>https://nfdz.io/posts/2017/foco/</link>
       <pubDate>Sun, 06 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>/posts/2017/foco/</guid>
+      <guid>https://nfdz.io/posts/2017/foco/</guid>
       <description>Minimalist text editor</description>
     </item>
     
