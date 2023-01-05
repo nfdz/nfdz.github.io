@@ -1,4 +1,4 @@
-baseURL: "" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
+baseURL: "https://nfdz.io/"
 title: nfdz
 paginate: 5
 theme: PaperMod
@@ -27,13 +27,13 @@ languages:
         menu:
             main:
                 - name: Tags
-                  url: tags/
+                  url: /tags/
                   weight: 1
                 - name: Archive
-                  url: archives
+                  url: /archives
                   weight: 2
                 - name: Search
-                  url: search/
+                  url: /search/
                   weight: 3
                 - name: Projects
                   url: https://github.com/nfdz
@@ -78,7 +78,7 @@ params:
         # - name: KoFi
         #   url: "https://ko-fi.com/-"
         - name: Rss
-          url: "index.xml"
+          url: "/index.xml"
 
     # editPost:
     #     URL: "https://github.com/nfdz/nfdz.github.io/tree/content"
@@ -96,7 +96,7 @@ params:
 
     assets:
         disableHLJS: true
-        favicon: "images/favicon.ico"
+        favicon: "/images/favicon.ico"
         # favicon16x16: "<link / abs url>"
         # favicon32x32: "<link / abs url>"
         # apple_touch_icon: "<link / abs url>"
