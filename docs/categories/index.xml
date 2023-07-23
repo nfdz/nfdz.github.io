@@ -2,8 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on nfdz</title>
-    <link>https://nfdz.io/categories/</link>
+    <link>https://nfdz.dev/categories/</link>
     <description>Recent content in Categories on nfdz</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://nfdz.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://nfdz.dev/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

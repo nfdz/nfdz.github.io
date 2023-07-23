@@ -2,66 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nfdz.io/tags/books/</loc>
+    <loc>https://nfdz.dev/tags/books/</loc>
     <lastmod>2020-01-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nfdz.io/tags/design-patterns/</loc>
+    <loc>https://nfdz.dev/tags/design-patterns/</loc>
     <lastmod>2020-01-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nfdz.io/</loc>
+    <loc>https://nfdz.dev/</loc>
     <lastmod>2020-01-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nfdz.io/posts/</loc>
+    <loc>https://nfdz.dev/posts/</loc>
     <lastmod>2020-01-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nfdz.io/tags/</loc>
+    <loc>https://nfdz.dev/tags/</loc>
     <lastmod>2020-01-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nfdz.io/posts/2020/two-books/</loc>
+    <loc>https://nfdz.dev/posts/2020/two-books/</loc>
     <lastmod>2020-01-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nfdz.io/tags/android/</loc>
+    <loc>https://nfdz.dev/tags/android/</loc>
     <lastmod>2019-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nfdz.io/posts/2019/clubapp/</loc>
+    <loc>https://nfdz.dev/posts/2019/clubapp/</loc>
     <lastmod>2019-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nfdz.io/tags/firebase/</loc>
+    <loc>https://nfdz.dev/tags/firebase/</loc>
     <lastmod>2019-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nfdz.io/tags/open-source/</loc>
+    <loc>https://nfdz.dev/tags/open-source/</loc>
     <lastmod>2019-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nfdz.io/posts/2018/findoor/</loc>
+    <loc>https://nfdz.dev/posts/2018/findoor/</loc>
     <lastmod>2018-07-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nfdz.io/tags/arduino/</loc>
+    <loc>https://nfdz.dev/tags/arduino/</loc>
     <lastmod>2018-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nfdz.io/posts/2018/interactive-tree/</loc>
+    <loc>https://nfdz.dev/posts/2018/interactive-tree/</loc>
     <lastmod>2018-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nfdz.io/tags/raspberry-pi/</loc>
+    <loc>https://nfdz.dev/tags/raspberry-pi/</loc>
     <lastmod>2018-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nfdz.io/posts/2018/permissions-watcher/</loc>
+    <loc>https://nfdz.dev/posts/2018/permissions-watcher/</loc>
     <lastmod>2018-01-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nfdz.io/posts/2017/dependency-locator/</loc>
+    <loc>https://nfdz.dev/posts/2017/dependency-locator/</loc>
     <lastmod>2017-11-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nfdz.io/tags/java/</loc>
+    <loc>https://nfdz.dev/tags/java/</loc>
     <lastmod>2017-11-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nfdz.io/posts/2017/foco/</loc>
+    <loc>https://nfdz.dev/posts/2017/foco/</loc>
     <lastmod>2017-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nfdz.io/archives/</loc>
+    <loc>https://nfdz.dev/archives/</loc>
   </url><url>
-    <loc>https://nfdz.io/categories/</loc>
+    <loc>https://nfdz.dev/categories/</loc>
   </url><url>
-    <loc>https://nfdz.io/search/</loc>
+    <loc>https://nfdz.dev/search/</loc>
   </url><url>
-    <loc>https://nfdz.io/series/</loc>
+    <loc>https://nfdz.dev/series/</loc>
   </url>
 </urlset>

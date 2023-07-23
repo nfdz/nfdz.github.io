@@ -2,25 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>design-patterns on nfdz</title>
-    <link>https://nfdz.io/tags/design-patterns/</link>
+    <link>https://nfdz.dev/tags/design-patterns/</link>
     <description>Recent content in design-patterns on nfdz</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 08 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://nfdz.io/tags/design-patterns/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Wed, 08 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://nfdz.dev/tags/design-patterns/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What am I reading?</title>
-      <link>https://nfdz.io/posts/2020/two-books/</link>
+      <link>https://nfdz.dev/posts/2020/two-books/</link>
       <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nfdz.io/posts/2020/two-books/</guid>
+      <guid>https://nfdz.dev/posts/2020/two-books/</guid>
       <description>Two books I have read, two books I am reading, and two books I am going to read</description>
     </item>
     
     <item>
       <title>Dependency Locator</title>
-      <link>https://nfdz.io/posts/2017/dependency-locator/</link>
+      <link>https://nfdz.dev/posts/2017/dependency-locator/</link>
       <pubDate>Sun, 12 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://nfdz.io/posts/2017/dependency-locator/</guid>
+      <guid>https://nfdz.dev/posts/2017/dependency-locator/</guid>
       <description>Java service locator pattern implementation</description>
     </item>
     
