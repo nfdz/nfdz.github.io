@@ -1,4 +1,4 @@
-baseURL: "https://nfdz.io/"
+baseURL: "https://nfdz.dev/"
 title: nfdz
 paginate: 5
 theme: PaperMod
@@ -72,7 +72,7 @@ params:
 
     socialIcons:
         - name: Email
-          url: "mailto://hey@nfdz.io"
+          url: "mailto://hey@nfdz.dev"
         - name: github
           url: "https://github.com/nfdz"
         # - name: KoFi

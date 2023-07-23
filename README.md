@@ -6,6 +6,6 @@
   </a>
 </p>
 
-**https://nfdz.github.io** or **https://nfdz.io**
+**https://nfdz.github.io** or **https://nfdz.dev**
 
 <small>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://github.com/adityatelange/hugo-PaperMod/" target="_blank">PaperMod</a>.</small>
