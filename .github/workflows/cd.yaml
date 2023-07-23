@@ -28,7 +28,7 @@ jobs:
           githubActor: ${{ github.actor }}
         run: git config --global user.name "$githubActor" && git config --global user.email "$githubActor@github"
       - name: Checkout release
-        run: git fetch origin && git checkout "origin/release/master" && git merge -X theirs "origin/master" --allow-unrelated-histories
+        run: git fetch origin && git checkout "origin/release/master" && rm -rf themes/PaperMod && git merge -X theirs "origin/master" --allow-unrelated-histories
       - name: Build
         run: hugo
       - name: Prepare
