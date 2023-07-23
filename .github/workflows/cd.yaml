@@ -27,7 +27,7 @@ jobs:
         env:
           githubActor: ${{ github.actor }}
         run: git config --global user.name "$githubActor" && git config --global user.email "$githubActor@github"
-      - name: Checkout release
+      - name: Checkout Release
         run: git fetch origin && git checkout "origin/release/master" && git merge -X theirs "origin/master" --allow-unrelated-histories
       - name: Build
         run: hugo
