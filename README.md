@@ -8,4 +8,4 @@
 
 **https://nfdz.github.io** or **https://nfdz.dev**
 
-<small>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://github.com/adityatelange/hugo-PaperMod/" target="_blank">PaperMod</a>.</small>
+<small>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://github.com/coolapso/hugo-theme-terminalcv" target="_blank">terminalCV</a>.</small>
