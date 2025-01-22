@@ -1,0 +1,463 @@
+{{ define "body" }}
+<script> 
+jQuery(document).ready(function($) {
+    var animation = false;
+
+    var commands = {
+        help: "shows help",
+        less: "Use less as output method",
+        whois: "list basic details",
+        contact: "get in touch",
+        work: "list work experience",
+        education: "list education",
+        skills: "list skills",
+        platforms: "list platforms",
+        frameworks: "list frameworks",
+        languages: "list spoken languages",
+        projects: "list projects",
+        {{ if .Site.Params.certifications }} 
+            certifications: "list certifications",
+        {{ end }}
+        {{ if .Site.Params.startxLocation }}
+            startx: "starts graphical environment",
+        {{ end }}
+        {{ if .Site.Params.misc }}
+            {{ .Site.Params.misc.commandName | default "other" }}: "{{.Site.Params.misc.title }}",
+        {{ end }}
+        {{ if .Site.Params.Source }}
+            source: "about this website",
+        {{ end }}
+        {{ if .Site.Params.version }}
+            version: "Current version",
+        {{ end }}
+        {{ if .Site.Params.exitLocation }}
+            exit: "exit the terminal",
+        {{ end }}
+        all: "Show all details",
+    };
+
+    function progressBar(number) {
+        var barLength = Math.round(number / 10);
+        var barFilled = Array(barLength + 1).join("&#9611;");
+        var barBlank= Array(11 - barLength).join("&#9617;");
+
+        return barFilled + barBlank
+    }
+
+    // Calculate the tabbing to keep commands and descriptions aligned in the help message
+    function padKey(key, length) {
+        return key + ' '.repeat(length - key.length);
+    }
+
+    function commandsHelp() {
+        let longestKeyLength = Math.max(...Object.keys(commands).map(key => key.length));
+
+        let helpText = ""
+        for (let key in commands) {
+            if (commands.hasOwnProperty(key)) {
+                helpText += ` ${padKey(key, longestKeyLength)}\t${commands[key]}\n`
+            }
+        }
+        return helpText
+    }
+
+    var help = '\n[[b;white;]usage:]\n' +
+                '\n <command> - execute the command\n' +
+                ' less <command> - use less to display the output\n\n' +
+                '\n[[b;white;]Available commands:]\n' + 
+               commandsHelp();
+
+    var whois = [
+    {{ with .Site.Params.whois.details }} 
+        '[[b;grey;]Name:]\t\t\t{{ .name }}\n' + 
+        '[[b;grey;]Profession:]\t\t{{ .profession }}\n' +
+        '[[b;grey;]Location:]\t\t{{ .location }}\n' +
+        {{ if .email }}
+        '[[b;grey;]Email:]\t\t\t{{ .email }}\n' +
+        {{ end }}
+        {{ if .homelink }}
+        '[[b;grey;]Homepage:]\t\t{{ .homelink }}\n' +
+        {{ end }}
+        {{ if .description }}
+        '{{ .description }}' +
+        {{ end }}
+        '\r',
+    {{ end }}
+    ];
+
+    function contact() { 
+        var hideName = false;
+        let sMap = { 
+            {{ with .Site.Params.social.details }} 
+                {{ range. }}
+                {{ .name }}: "{{ .url }}",
+                {{ end }}
+            {{ end }}
+        };
+
+        {{ if .Site.Params.social.settings.hideName }}
+        hideName = true
+        {{ end }}
+        socialText = []
+        for (let key in sMap) {
+            if (sMap.hasOwnProperty(key)) {
+                if (hideName) {
+                    socialText.push(sMap[key]);
+                } else { 
+                    let longestKeyLength = Math.max(...Object.keys(sMap).map(key => key.length));
+                    socialText.push(`${padKey(key, longestKeyLength)}\t${sMap[key]}`)
+                };
+            }
+        }
+
+        return socialText
+    }
+
+    var certifications = [
+    {{ with .Site.Params.certifications.details }}
+        {{ range . }}
+            '---\n' +
+            '[[b;{{ .color | default "grey" }};]{{ .certName }}]\n' +
+            '{{ .date }}\n' +
+            {{ if .company }}
+            '{{ .company }}\n' +
+            {{ end }}
+            {{ if .description }}
+            '{{ .description }}\n' +
+            {{ end }}
+            {{ if .badge }}
+            'Badge: \t{{ .badge }}\n' +
+            {{ end }}
+            '\r',
+        {{ end }}
+    {{ end }}
+    ];
+    
+    var work = [
+    {{ with .Site.Params.work.details }}
+        {{ range .}}
+            '---\n' +
+            '[[b;{{ .color | default "DarkOrange" }};]{{ .jobTitle }}]\n' +
+            {{ if .company }}
+            '{{ .company }}\n' +
+            {{ end }}
+            {{ if .location }}
+            '{{ .location}}\n' +
+            {{ end }}
+            '{{ .date }}\n' +
+            '{{ .description }}' +
+            '\r',
+        {{ end }}
+    {{ end }}
+    ];
+
+    var education = [
+    {{ with .Site.Params.education.details }}
+        {{ range . }}
+            '---\n' +
+            '[[b;{{ .color | default "DeepSkyBlue" }};]{{ .courseName }}]\n' +
+            '{{ .date }}\n' +
+            {{ if .description }}
+                "{{ .description }}" +
+            {{ end }}
+            "\r",
+        {{ end }}
+    {{ end }}
+    ];
+
+    var projects = [
+    {{ with .Site.Params.projects.details }}
+        {{ range .}}
+            '---\n' +
+            '[[b;{{ .color | default "Wheat" }};]{{ .title }}]\n' +
+            '{{ .date }}\n' +
+            '{{ .link }}\n' +
+            {{ if .description }}
+            '{{ .description }}' +
+            {{ end }}
+            "\r",
+      {{ end }}
+    {{ end }}
+    ];
+
+    var skills = [
+    {{ with .Site.Params.skills.details }}
+        {{ range . }}
+            '[[b;{{ .color | default "LightPink" }};]{{ .name }}:]\n' +
+            progressBar({{ .percentage }}) + '\n' +
+            {{ if .description }}
+            '{{ .description }}\n' +
+            {{ end }}
+            '\r',
+        {{ end }}
+    {{ end }}
+    ];
+
+    var platforms = [
+    {{ with .Site.Params.platforms.details }}
+        {{ range . }}
+            '[[b;{{ .color | default "LemonChiffon" }};]{{ .name }}:]\n' +
+            progressBar({{ .percentage }}) + '\n' + 
+            {{ if .description }}
+            '{{ .description }}\n' +
+            {{ end }}
+            '\r',
+        {{ end }}
+    {{ end }}
+    ];
+
+    var frameworks = [
+    {{ with .Site.Params.frameworks.details }}
+        {{ range . }}
+            '[[b;{{ .color | default "Tomato" }};]{{ .name }}:]\n' +
+            progressBar({{ .percentage }}) + '\n' + 
+            {{ if .description }}
+            '{{ .description }}\n' +
+            {{ end }}
+            '\r',
+        {{ end }}
+    {{ end }}
+    ];
+  
+    var languages = [
+    {{ with .Site.Params.languages.details }}
+        {{ range . }}
+            '[[b;{{ .color | default "PaleGreen" }};]{{ .name }}:]\n' +
+            progressBar({{ .percentage }}) + '\n' +
+            {{ if .description }}
+            '{{ .description }}\n' +
+            {{ end }}
+            '\r',
+        {{ end }}
+    {{ end }}
+    ];
+
+    var misc = [
+         {{ with .Site.Params.misc }}
+        '[[b;{{ .titleColor }};]{{ .title }}]\n' +
+        '---\n' +
+        '[[;{{ .contentColor }};]{{ .content }}]\r',
+         {{ end }}
+    ];
+
+    var source =  '[[;red;]May the source be with you]\n' +
+                  '[[;grey;]https://github.com/nfdz/nfdz.github.io\n';
+
+    var all = [
+        '\n$ whois:\n',
+        whois,
+        '$ contact:\n',
+        contact(),
+        '\n$ work:\n',
+        work,
+        '\n$ education:\n',
+        education,
+        '\n$ skills:\n',
+        skills,
+        '$ platforms:\n',
+        platforms,
+        '$ frameworks:\n',
+        frameworks,
+        '$ languages:\n',
+        languages,
+        '$ projects:\n',
+        projects,
+        {{ if .Site.Params.certifications }}
+        '$ certifications:\n',
+        certifications,
+        {{ end }}
+        {{ if .Site.Params.source }}
+        '\n$ source:\n',
+        source,
+        {{ end }}
+    ]
+
+    $('body').terminal(function(command, term) {
+
+        var useLess = false;
+        {{if .Site.Params.useLess }}
+        useLess = true;
+        {{ end }}
+
+        function echoArray(array) {
+            if (useLess) {
+                term.less(array);
+            } else {
+                for (i = 0; i < array.length; i += 1) {
+                    term.echo(array[i]);
+                }
+            }
+        }
+        //Function used by StartX to draw the progressBar
+        function progress(percent, width) {
+            var size = Math.round(width*percent/100);
+            var left = '', taken = '', i;
+            for (i=size; i--;) {
+                taken += '=';
+            }
+            if (taken.length > 0) {
+                taken = taken.replace(/=$/, '>');
+            }
+            for (i=width-size; i--;) {
+                left += ' ';
+            }
+            return '[' + taken + left + '] ' + percent + '%';
+        }
+
+        function loading () {
+            var i = 0, size = 30;
+            prompt = term.get_prompt();
+            string = progress(0, size);
+            term.set_prompt(progress);
+            animation = true;
+            (function loop() {
+                string = progress(i++, size);
+                term.set_prompt(string);
+                if (i < 100) {
+                    timer = setTimeout(loop, 10);
+                } else {
+                    term.echo(progress(i, size) + ' [[b;green;]OK]').set_prompt(prompt);
+                    animation = false
+                }
+            })();
+        }
+
+        commands = command.split(/[ ]+/);
+        if (commands[0] == 'less') {
+            useLess = true;
+            commands.shift();
+        } 
+                    
+        switch(commands[0]) {
+            case 'whois':
+                {{ if .Site.Params.whois.settings.useLess }}
+                useLess = true;
+                {{ end }}
+                echoArray(whois);
+                break;
+            case 'contact':
+                {{ if .Site.Params.social.settings.useLess }}
+                useLess = true;
+                {{ end }}
+                echoArray(contact());
+                break;
+            case 'work':
+                {{ if .Site.Params.work.settings.useLess }}
+                useLess = true;
+                {{ end }}
+                echoArray(work);
+                break;
+            case 'education':
+                {{ if .Site.Params.education.settings.useLess }}
+                useLess = true;
+                {{ end }}
+                echoArray(education);
+                break;
+            case 'skills':
+                {{ if .Site.Params.skills.settings.useLess }}
+                useLess = true;
+                {{ end }}
+                echoArray(skills);
+                break;
+            case 'platforms':
+                {{ if .Site.Params.platforms.settings.useLess }}
+                useLess = true;
+                {{ end }}
+                echoArray(platforms);
+                break;
+            case 'frameworks':
+                {{ if .Site.Params.frameworks.settings.useLess }}
+                useLess = true;
+                {{ end }}
+                echoArray(frameworks);
+                break;
+            case 'languages':
+                {{ if .Site.Params.languages.settings.useLess }}
+                useLess = true;
+                {{ end }}
+                echoArray(languages);
+                break;
+            case 'projects':
+                {{ if .Site.Params.projects.settings.useLess }}
+                useLess = true;
+                {{ end }}
+                echoArray(projects);
+                break;
+            case 'certifications':
+                {{ if .Site.Params.certifications.settings.useLess }}
+                useLess = true;
+                {{ end }}
+                term.echo(certifications);
+                break;
+            case '{{ .Site.Params.misc.commandName | default "misc"}}':
+                {{ if .Site.Params.misc.settings.useLess }}
+                useLess = true;
+                {{ end }}
+                echoArray(misc);
+                break;
+            case 'help':
+            case '?':
+                term.echo(help);
+                break;
+            case 'all':
+                {{ if .Site.Params.all.settings.useLess }}
+                useLess = true;
+                {{ end }}
+                echoArray(all.flat(1));
+                break;
+            {{ if .Site.Params.startxLocation }}
+            case 'startx':
+                term.echo("loading ...");
+                loading();
+                setTimeout(function(){window.location = "{{ .Site.Params.startxLocation }}"}, 2000);
+                break;
+            {{ end }}
+            case ':(){:|:&};:':
+                term.echo("nice try");
+                break;
+            case 'source':
+                {{ if .Site.Params.misc.settings.useLess }}
+                useLess = true;
+                {{ end }}
+                term.echo(source);
+                break;
+            {{ if .Site.Params.exitLocation }}
+            case 'exit':
+                term.echo("terminating ... ")
+                loading();
+                setTimeout(function(){window.location = '{{ .Site.Params.exitLocation }}'}, 2000);
+                break;
+            {{ end }}
+            {{ if .Site.Params.version }}
+            case 'version':
+                term.echo("{{ .Site.Params.version }}");
+                break;
+            {{ end }}
+            case '':
+                break;
+            default:
+                term.echo("\nunknown command: " + command + "\n" +
+                          "please type 'help' or '?' for a list of available commands\n");
+        }
+    }, {
+        prompt: '{{ with .Site.Params.prompt }}{{ with .core }}[[;{{ .beforeColor | default "grey" }};]{{ .before }}][[;{{ .color | default "grey" }};]{{ .text }}][[;{{ .afterColor | default "gey" }};]{{ .after }}]{{ end }}{{ with .separator }}[[;{{ .separatorColor | default "grey" }};]{{ .text }}]{{ end }}{{ with .path }}[[;{{ .beforeColor | default "grey" }};]{{ .before }}][[;{{ .color | default "grey" }};]{{ .text | default ":~$" }}][[;{{ .afterColor | default "grey" }};]{{ .after }}]{{ end }}{{ with .extra }}[[;{{ .color | default "grey" }};]{{ .text }}]{{ end }}{{ end }}',
+        greetings: "[[b;{{ .Site.Params.greetingColor | default "white" }};]{{ .Site.Params.greeting }}]",
+
+        keydown: function(e, term) {
+            if (animation) {
+                if (e.which == 68 && e.ctrlKey) { // CTRL+D
+                    clearTimeout(timer);
+                    animation = false;
+                    term.echo(string + ' [[b;red;]FAIL]')
+                    .set_prompt(prompt);
+                }
+                return false;
+            }
+        },
+        autocompleteMenu: false,
+        completion: Object.keys(commands)
+        
+    });
+});
+</script>
+{{ end }}
