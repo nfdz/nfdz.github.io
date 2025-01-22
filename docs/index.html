@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w2.org/1999/xhtml">
+<html lang="en">
+    <head>
+	<meta name="generator" content="Hugo 0.142.0">
+            <meta charset="utf-8" />
+    <title>nfdz </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Software engineer specialized in mobile technologies.">
+    <meta property="og:title" content="nfdz" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://nfdz.dev/" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href=""/>
+    <link rel="canonical" href="https://nfdz.dev/" />    
+
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.42.2/js/jquery.terminal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/less.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal/js/autocomplete_menu.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.42.0/css/jquery.terminal.min.css" rel="stylesheet"/>
+    <script src="https://cdn.counter.dev/script.js" data-id="e8c4ac17-b831-4d09-99fc-d5c9883f0baf" data-utcoffset="2"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            width: 100%;
+        }
+        .terminal {
+            background-color: #181818;
+        }
+        :root {
+            --color: white;
+            --font: "Source Code Pro", monospace;
+            --size: 1.2;
+        }
+    </style>
+
+
+
+
+
+    </head>
+        <body>
+        
+<script> 
+jQuery(document).ready(function($) {
+    var animation = false;
+
+    var commands = {
+        help: "shows help",
+        less: "Use less as output method",
+        whois: "list basic details",
+        contact: "get in touch",
+        work: "list work experience",
+        education: "list education",
+        skills: "list skills",
+        platforms: "list platforms",
+        frameworks: "list frameworks",
+        languages: "list spoken languages",
+        projects: "list projects",
+        
+        
+        
+            "hello": "greets the visitor",
+        
+        
+            source: "about this website",
+        
+        
+            version: "Current version",
+        
+        
+            exit: "exit the terminal",
+        
+        all: "Show all details",
+    };
+
+    function progressBar(number) {
+        var barLength = Math.round(number / 10);
+        var barFilled = Array(barLength + 1).join("&#9611;");
+        var barBlank= Array(11 - barLength).join("&#9617;");
+
+        return barFilled + barBlank
+    }
+
+    
+    function padKey(key, length) {
+        return key + ' '.repeat(length - key.length);
+    }
+
+    function commandsHelp() {
+        let longestKeyLength = Math.max(...Object.keys(commands).map(key => key.length));
+
+        let helpText = ""
+        for (let key in commands) {
+            if (commands.hasOwnProperty(key)) {
+                helpText += ` ${padKey(key, longestKeyLength)}\t${commands[key]}\n`
+            }
+        }
+        return helpText
+    }
+
+    var help = '\n[[b;white;]usage:]\n' +
+                '\n <command> - execute the command\n' +
+                ' less <command> - use less to display the output\n\n' +
+                '\n[[b;white;]Available commands:]\n' + 
+               commandsHelp();
+
+    var whois = [
+     
+        '[[b;grey;]Name:]\t\t\tNoé Fernández\n' + 
+        '[[b;grey;]Profession:]\t\tSoftware Engineer\n' +
+        '[[b;grey;]Location:]\t\tEurope\n' +
+        
+        '[[b;grey;]Email:]\t\t\they@nfdz.dev\n' +
+        
+        
+        '[[b;grey;]Homepage:]\t\thttps:\/\/nfdz.dev\n' +
+        
+        
+        'I am an experienced, reliable, communicative, and team player software engineer. I have specialized in mobile development throughout my professional experience. I am always looking for challenging, intellectually stimulating, creative environments where I can apply my knowledge and skills for continuous growth and improvement.\n' +
+        
+        '\r',
+    
+    ];
+
+    function contact() { 
+        var hideName = false;
+        let sMap = { 
+             
+                
+                "github": "https:\/\/github.com\/nfdz",
+                
+                "x/twitter": "https:\/\/x.com\/nfdzdev",
+                
+                "Email": "hey@nfdz.dev",
+                
+            
+        };
+
+        
+        socialText = []
+        for (let key in sMap) {
+            if (sMap.hasOwnProperty(key)) {
+                if (hideName) {
+                    socialText.push(sMap[key]);
+                } else { 
+                    let longestKeyLength = Math.max(...Object.keys(sMap).map(key => key.length));
+                    socialText.push(`${padKey(key, longestKeyLength)}\t${sMap[key]}`)
+                };
+            }
+        }
+
+        return socialText
+    }
+
+    var certifications = [
+    
+    ];
+    
+    var work = [
+    
+        
+            '---\n' +
+            '[[b;DarkOrange;]Mobile Software Engineer]\n' +
+            
+            
+            '2023 - Present\n' +
+            'Flutter, Mobile, Web, MacOS, Windows, Google Play, App Store, ChatGPT, RevenueCat, Stripe.' +
+            '\r',
+        
+            '---\n' +
+            '[[b;DarkOrange;]Mobile Software Engineer]\n' +
+            
+            
+            '2020  - 2023\n' +
+            'Kotlin Multiplatform, Flutter, Android, iOS, tvOS, CircleCI, React Native, Unity.' +
+            '\r',
+        
+            '---\n' +
+            '[[b;DarkOrange;]Flutter Software Engineer]\n' +
+            
+            
+            '2019 - 2020\n' +
+            'Flutter, Android, iOS, Scrum, Agile, Jenkins, Grafana, Countly, Here Maps.' +
+            '\r',
+        
+            '---\n' +
+            '[[b;DarkOrange;]Flutter Developer]\n' +
+            
+            
+            '2018 - 2019\n' +
+            'Flutter, Dart, Kotlin, Android, iOS, Firebase, Facebook, Google Maps.' +
+            '\r',
+        
+            '---\n' +
+            '[[b;DarkOrange;]Android Software Engineer]\n' +
+            
+            
+            '2017 - 2018\n' +
+            'Android, CI with VSTS, Firebase, Google Fit, Bluetooth, NFC, Azure Notifications Hub, Azure IoT, Facebook.' +
+            '\r',
+        
+            '---\n' +
+            '[[b;DarkOrange;]Satellite Software Engineer]\n' +
+            
+            
+            '2015 - 2016\n' +
+            'Java, Eclipse RCP, Python, Protocol buffers, CORBA, HornetQ, C\u002b\u002b, JUnit.' +
+            '\r',
+        
+    
+    ];
+
+    var education = [
+    
+        
+            '---\n' +
+            '[[b;DeepSkyBlue;]Flutter App Development Bootcamp]\n' +
+            '2019\n' +
+            
+                "App Brewery \u0026 Google Flutter Team" +
+            
+            "\r",
+        
+            '---\n' +
+            '[[b;DeepSkyBlue;]Associate Android Developer]\n' +
+            '2017\n' +
+            
+                "Google" +
+            
+            "\r",
+        
+            '---\n' +
+            '[[b;DeepSkyBlue;]Leadership Skills \u0026 Team Management]\n' +
+            '2015\n' +
+            
+                "University" +
+            
+            "\r",
+        
+            '---\n' +
+            '[[b;DeepSkyBlue;]Bachelor\u0027s Degree in Telematics.]\n' +
+            '2010 - 2014\n' +
+            
+                "University" +
+            
+            "\r",
+        
+    
+    ];
+
+    var projects = [
+    
+        
+            '---\n' +
+            '[[b;Wheat;]Rapidrive]\n' +
+            '2024\n' +
+            'https:\/\/rapidrive.app\n' +
+            
+            'Unlimited cloud storage powered by your own devices. Made with Flutter.' +
+            
+            "\r",
+      
+            '---\n' +
+            '[[b;Wheat;]Cryptool]\n' +
+            '2021\n' +
+            'https:\/\/github.com\/nfdz\/Cryptool\n' +
+            
+            'Open source cryptography Android application.' +
+            
+            "\r",
+      
+            '---\n' +
+            '[[b;Wheat;]Club App]\n' +
+            '2020\n' +
+            'https:\/\/github.com\/nfdz\/ClubApp\n' +
+            
+            'Android application to manage and loyalty your club members.' +
+            
+            "\r",
+      
+            '---\n' +
+            '[[b;Wheat;]Findoor]\n' +
+            '2019\n' +
+            'https:\/\/github.com\/nfdz\/Findoor\n' +
+            
+            'Android Library for Indoor Wi-Fi Navigation.' +
+            
+            "\r",
+      
+            '---\n' +
+            '[[b;Wheat;]Interactive Tree Stand]\n' +
+            '2018\n' +
+            'https:\/\/nfdz.dev\/interactive-tree.jpeg\n' +
+            
+            'Arduino and Raspberry Pi advertising stand for a fair.' +
+            
+            "\r",
+      
+            '---\n' +
+            '[[b;Wheat;]Permissions Watcher]\n' +
+            '2017\n' +
+            'https:\/\/github.com\/nfdz\/PermissionsWatcher\n' +
+            
+            'Android permissions manager application.' +
+            
+            "\r",
+      
+    
+    ];
+
+    var skills = [
+    
+        
+            '[[b;LightPink;]Dart:]\n' +
+            progressBar( 100 ) + '\n' +
+            
+            '\r',
+        
+            '[[b;LightPink;]Kotlin:]\n' +
+            progressBar( 100 ) + '\n' +
+            
+            '\r',
+        
+            '[[b;LightPink;]Java:]\n' +
+            progressBar( 80 ) + '\n' +
+            
+            '\r',
+        
+            '[[b;LightPink;]Swift:]\n' +
+            progressBar( 60 ) + '\n' +
+            
+            '\r',
+        
+            '[[b;LightPink;]C#:]\n' +
+            progressBar( 50 ) + '\n' +
+            
+            '\r',
+        
+            '[[b;LightPink;]JavaScript:]\n' +
+            progressBar( 50 ) + '\n' +
+            
+            '\r',
+        
+            '[[b;LightPink;]Python:]\n' +
+            progressBar( 30 ) + '\n' +
+            
+            '\r',
+        
+            '[[b;LightPink;]C\u002b\u002b:]\n' +
+            progressBar( 30 ) + '\n' +
+            
+            '\r',
+        
+    
+    ];
+
+    var platforms = [
+    
+        
+            '[[b;LemonChiffon;]Android:]\n' +
+            progressBar( 100 ) + '\n' + 
+            
+            '\r',
+        
+            '[[b;LemonChiffon;]iOS:]\n' +
+            progressBar( 80 ) + '\n' + 
+            
+            '\r',
+        
+            '[[b;LemonChiffon;]Linux (Backend):]\n' +
+            progressBar( 80 ) + '\n' + 
+            
+            '\r',
+        
+            '[[b;LemonChiffon;]Firebase:]\n' +
+            progressBar( 70 ) + '\n' + 
+            
+            '\r',
+        
+            '[[b;LemonChiffon;]MacOS:]\n' +
+            progressBar( 70 ) + '\n' + 
+            
+            '\r',
+        
+            '[[b;LemonChiffon;]MacOS:]\n' +
+            progressBar( 70 ) + '\n' + 
+            
+            '\r',
+        
+            '[[b;LemonChiffon;]Linux (Frontend):]\n' +
+            progressBar( 50 ) + '\n' + 
+            
+            '\r',
+        
+            '[[b;LemonChiffon;]Windows:]\n' +
+            progressBar( 40 ) + '\n' + 
+            
+            '\r',
+        
+    
+    ];
+
+    var frameworks = [
+    
+        
+            '[[b;Tomato;]Flutter:]\n' +
+            progressBar( 100 ) + '\n' + 
+            
+            '\r',
+        
+            '[[b;Tomato;]Kotlin Multiplatform:]\n' +
+            progressBar( 100 ) + '\n' + 
+            
+            '\r',
+        
+            '[[b;Tomato;]Jetpack Compose:]\n' +
+            progressBar( 80 ) + '\n' + 
+            
+            '\r',
+        
+            '[[b;Tomato;]Material UI:]\n' +
+            progressBar( 70 ) + '\n' + 
+            
+            '\r',
+        
+            '[[b;Tomato;]Realm:]\n' +
+            progressBar( 70 ) + '\n' + 
+            
+            '\r',
+        
+            '[[b;Tomato;]SQLite:]\n' +
+            progressBar( 70 ) + '\n' + 
+            
+            '\r',
+        
+            '[[b;Tomato;]Cloud Functions:]\n' +
+            progressBar( 60 ) + '\n' + 
+            
+            '\r',
+        
+            '[[b;Tomato;]Unity:]\n' +
+            progressBar( 40 ) + '\n' + 
+            
+            '\r',
+        
+    
+    ];
+  
+    var languages = [
+    
+        
+            '[[b;PaleGreen;]Spanish:]\n' +
+            progressBar( 100 ) + '\n' +
+            
+            '\r',
+        
+            '[[b;PaleGreen;]English:]\n' +
+            progressBar( 80 ) + '\n' +
+            
+            '\r',
+        
+            '[[b;PaleGreen;]Portuguese:]\n' +
+            progressBar( 60 ) + '\n' +
+            
+            '\r',
+        
+    
+    ];
+
+    var misc = [
+         
+        '[[b;Lavender;]greets the visitor]\n' +
+        '---\n' +
+        '[[;orange;]Hi, how\u0027s everything going? :D \nMaybe you\u0027d like to try a different way to say hello, try using \u0027contact\u0027.\n]\r',
+         
+    ];
+
+    var source =  '[[;red;]May the source be with you]\n' +
+                  '[[;grey;]https://github.com/nfdz/nfdz.github.io\n';
+
+    var all = [
+        '\n$ whois:\n',
+        whois,
+        '$ contact:\n',
+        contact(),
+        '\n$ work:\n',
+        work,
+        '\n$ education:\n',
+        education,
+        '\n$ skills:\n',
+        skills,
+        '$ platforms:\n',
+        platforms,
+        '$ frameworks:\n',
+        frameworks,
+        '$ languages:\n',
+        languages,
+        '$ projects:\n',
+        projects,
+        
+        
+        '\n$ source:\n',
+        source,
+        
+    ]
+
+    $('body').terminal(function(command, term) {
+
+        var useLess = false;
+        
+
+        function echoArray(array) {
+            if (useLess) {
+                term.less(array);
+            } else {
+                for (i = 0; i < array.length; i += 1) {
+                    term.echo(array[i]);
+                }
+            }
+        }
+        
+        function progress(percent, width) {
+            var size = Math.round(width*percent/100);
+            var left = '', taken = '', i;
+            for (i=size; i--;) {
+                taken += '=';
+            }
+            if (taken.length > 0) {
+                taken = taken.replace(/=$/, '>');
+            }
+            for (i=width-size; i--;) {
+                left += ' ';
+            }
+            return '[' + taken + left + '] ' + percent + '%';
+        }
+
+        function loading () {
+            var i = 0, size = 30;
+            prompt = term.get_prompt();
+            string = progress(0, size);
+            term.set_prompt(progress);
+            animation = true;
+            (function loop() {
+                string = progress(i++, size);
+                term.set_prompt(string);
+                if (i < 100) {
+                    timer = setTimeout(loop, 10);
+                } else {
+                    term.echo(progress(i, size) + ' [[b;green;]OK]').set_prompt(prompt);
+                    animation = false
+                }
+            })();
+        }
+
+        commands = command.split(/[ ]+/);
+        if (commands[0] == 'less') {
+            useLess = true;
+            commands.shift();
+        } 
+                    
+        switch(commands[0]) {
+            case 'whois':
+                
+                echoArray(whois);
+                break;
+            case 'contact':
+                
+                echoArray(contact());
+                break;
+            case 'work':
+                
+                echoArray(work);
+                break;
+            case 'education':
+                
+                echoArray(education);
+                break;
+            case 'skills':
+                
+                echoArray(skills);
+                break;
+            case 'platforms':
+                
+                echoArray(platforms);
+                break;
+            case 'frameworks':
+                
+                echoArray(frameworks);
+                break;
+            case 'languages':
+                
+                echoArray(languages);
+                break;
+            case 'projects':
+                
+                echoArray(projects);
+                break;
+            case 'certifications':
+                
+                term.echo(certifications);
+                break;
+            case 'hello':
+                
+                echoArray(misc);
+                break;
+            case 'help':
+            case '?':
+                term.echo(help);
+                break;
+            case 'all':
+                
+                echoArray(all.flat(1));
+                break;
+            
+            case ':(){:|:&};:':
+                term.echo("nice try");
+                break;
+            case 'source':
+                
+                term.echo(source);
+                break;
+            
+            case 'exit':
+                term.echo("terminating ... ")
+                loading();
+                setTimeout(function(){window.location = 'about:blank'}, 2000);
+                break;
+            
+            
+            case 'version':
+                term.echo("v3.27.3\u002bhotfix.9");
+                break;
+            
+            case '':
+                break;
+            default:
+                term.echo("\nunknown command: " + command + "\n" +
+                          "please type 'help' or '?' for a list of available commands\n");
+        }
+    }, {
+        prompt: '[[;#D2FF72;][][[;#D2FF72;]user@nfdz.dev][[;#D2FF72;]\\]][[;#D2FF72;]:][[;grey;]][[;#D2FF72;]~][[;grey;]][[;#D2FF72;]$ ]',
+        greetings: "[[b;white;]‎\n             .o88o.       .o8            \n             888 \u0060\u0022      \u0022888            \nooo. .oo.   o888oo   .oooo888    oooooooo\n\u0060888P\u0022Y88b   888    d88\u0027 \u0060888   d\u0027\u0022\u00227d8P \n 888   888   888    888   888     .d8P\u0027  \n 888   888   888    888   888   .d8P\u0027  .P\no888o o888o o888o   \u0060Y8bod88P\u0022 d8888888P                                     \n\nWelcome! Nice to meet you. Use this terminal to learn more about me and my work.\n\nType \u0027help\u0027 for a list of available commands\n]",
+
+        keydown: function(e, term) {
+            if (animation) {
+                if (e.which == 68 && e.ctrlKey) { 
+                    clearTimeout(timer);
+                    animation = false;
+                    term.echo(string + ' [[b;red;]FAIL]')
+                    .set_prompt(prompt);
+                }
+                return false;
+            }
+        },
+        autocompleteMenu: false,
+        completion: Object.keys(commands)
+        
+    });
+});
+</script>
+
+        </body>
+</html>
