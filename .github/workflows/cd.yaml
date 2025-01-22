@@ -16,13 +16,11 @@ jobs:
 
     steps:
       - name: Hugo setup
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.115.4'
+          hugo-version: 'latest'
       - name: Checkout code
         uses: actions/checkout@v3
-      - name: Setup workspace
-        run: git submodule update --init --recursive
       - name: Config Git
         env:
           githubActor: ${{ github.actor }}

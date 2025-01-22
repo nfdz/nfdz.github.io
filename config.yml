@@ -1,153 +1,287 @@
-baseURL: "https://nfdz.dev/"
-title: nfdz
-paginate: 5
-theme: PaperMod
-
-enableInlineShortcodes: true
-enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
-buildExpired: false
-enableEmoji: true
-pygmentsUseClasses: true
-# googleAnalytics: UA-123-45
-
-minify:
-    disableXML: true
-    minifyOutput: true
-
-languages:
-    en:
-        languageName: "English"
-        weight: 1
-        taxonomies:
-          category: categories
-          tag: tags
-          series: series
-        menu:
-            main:
-                - name: Tags
-                  url: /tags/
-                  weight: 1
-                - name: Archive
-                  url: /archives
-                  weight: 2
-                - name: Search
-                  url: /search/
-                  weight: 3
-                - name: Projects
-                  url: https://github.com/nfdz
-                  weight: 4
-
-outputs:
-    home:
-        - HTML
-        - RSS
-        - JSON
+## Example Config file
+baseURL: "https://nfdz.dev"
+theme: "terminalcv"
+title: "nfdz"
 
 params:
-    env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Software engineer specialized in mobile technologies. This website is about apps, experiments, ventures, and other random projects."
-    author: nfdz
-    # author: ["Me", "You"] # multiple authors
+  version: 'v3.27.3+hotfix.9'
+  description: "Software engineer specialized in mobile technologies."
+  prompt:
+    core:
+      text: "user@nfdz.dev"
+      color: '#D2FF72'
+      before: '['
+      beforeColor: '#D2FF72'
+      after: '\]'
+      afterColor: '#D2FF72'
+      # separator: '-'
+    separator:
+      text: ":"
+      separatorColor: '#D2FF72'
+    path: 
+      # before: '['
+      # beforeColor: '#D2FF72'
+      text: '~'
+      color: '#D2FF72'
+      # after: '\]'
+      # afterColor: '#D2FF72'
+    extra:
+      text: "$ "
+      color: '#D2FF72'
 
-    defaultTheme: auto
-    # disableThemeToggle: true
-    ShowShareButtons: false
-    ShowReadingTime: true
-    # disableSpecial1stPost: true
-    displayFullLangName: true
-    ShowPostNavLinks: false
-    ShowBreadCrumbs: true
-    ShowCodeCopyButtons: true
-    ShowRssButtonInSectionTermList: true
-    ShowToc: true
-    comments: false
-    # images: ["cover.png"]
-    
-    homeInfoParams:
-        Title: "Hello"
-        Content: >
-            <p id="header-console-text">&nbsp;</p>
+  # promptColor: grey
+  # promptSimbols: ":~$"
+  # promptSimbolsColor: grey
+  # startxLocation: https://example.com
+  # useLess: true
+  exitLocation: 'about:blank'
+  source: true
+  #use a ‎ (blank character) if your first character of the ascii art is a whitespace
+  greeting: | 
+    ‎
+                 .o88o.       .o8            
+                 888 `"      "888            
+    ooo. .oo.   o888oo   .oooo888    oooooooo
+    `888P"Y88b   888    d88' `888   d'""7d8P 
+     888   888   888    888   888     .d8P'  
+     888   888   888    888   888   .d8P'  .P
+    o888o o888o o888o   `Y8bod88P" d8888888P                                     
 
-    socialIcons:
-        - name: Email
-          url: "mailto://hey@nfdz.dev"
-        - name: github
-          url: "https://github.com/nfdz"
-        # - name: KoFi
-        #   url: "https://ko-fi.com/-"
-        - name: Rss
-          url: "/index.xml"
+    Welcome! Nice to meet you. Use this terminal to learn more about me and my work.
 
-    # editPost:
-    #     URL: "https://github.com/nfdz/nfdz.github.io/tree/content"
-    #     Text: "Suggest Changes" # edit text
-    #     appendFilePath: true # to append file path to Edit link
+    Type 'help' for a list of available commands
 
-    # label:
-    #     text: "Home"
-    #     icon: icon.png
-    #     iconHeight: 35
 
-    # analytics:
-    #     google:
-    #         SiteVerificationTag: ""
+  whois: 
+    # settings:
+    #   useLess: true
+    details:
+      name: "Noé Fernández"
+      profession: "Software Engineer"
+      location: "Europe"
+      email: "hey@nfdz.dev"
+      homelink: "https://nfdz.dev"
+      description: |
+              I am an experienced, reliable, communicative, and team player software engineer. I have specialized in mobile development throughout my professional experience. I am always looking for challenging, intellectually stimulating, creative environments where I can apply my knowledge and skills for continuous growth and improvement.
 
-    assets:
-        disableHLJS: true
-        favicon: "/images/favicon.ico"
-        # favicon16x16: "<link / abs url>"
-        # favicon32x32: "<link / abs url>"
-        # apple_touch_icon: "<link / abs url>"
-        # safari_pinned_tab: "<link / abs url>"
+  social:
+    # settings:
+    #   useLess: true
+    #   hideName: true
+    details:
+    - name: "github"
+      url: "https://github.com/nfdz"
+    - name: "x/twitter"
+      url: "https://x.com/nfdzdev"
+    - name: "Email"
+      url: "hey@nfdz.dev"
 
-    # cover:
-    #     hidden: true # hide everywhere but not in structured data
-    #     hiddenInList: true # hide on list pages and home
-    #     hiddenInSingle: true # hide on single page
+  work:
+    # settings:
+    #   useLess: true
+    details:
+    - jobTitle: Mobile Software Engineer
+      # color: red
+      # company: 'Freelance & Entrepreneur' 
+      # location: Spain
+      date: 2023 - Present
+      description: Flutter, Mobile, Web, MacOS, Windows, Google Play, App Store, ChatGPT, RevenueCat, Stripe.
 
-    # fuseOpts:
-    #     isCaseSensitive: false
-    #     shouldSort: true
-    #     location: 0
-    #     distance: 1000
-    #     threshold: 0.4
-    #     minMatchCharLength: 0
-    #     keys: ["title", "permalink", "summary", "content"]
+    - jobTitle: Mobile Software Engineer
+      date: 2020  - 2023
+      description: Kotlin Multiplatform, Flutter, Android, iOS, tvOS, CircleCI, React Native, Unity.
 
-markup:
-    goldmark:
-        renderer:
-            unsafe: true
-    highlight:
-        noClasses: false
-        # anchorLineNos: true
-        # codeFences: true
-        # guessSyntax: true
-        lineNos: true
-        # style: monokai
+    - jobTitle: Flutter Software Engineer
+      date: 2019 - 2020
+      description: Flutter, Android, iOS, Scrum, Agile, Jenkins, Grafana, Countly, Here Maps.
 
-privacy:
-    vimeo:
-        disabled: false
-        simple: true
+    - jobTitle: Flutter Developer
+      date: 2018 - 2019
+      description: Flutter, Dart, Kotlin, Android, iOS, Firebase, Facebook, Google Maps.
 
-    twitter:
-        disabled: false
-        enableDNT: true
-        simple: true
+    - jobTitle: Android Software Engineer
+      date: 2017 - 2018
+      description: Android, CI with VSTS, Firebase, Google Fit, Bluetooth, NFC, Azure Notifications Hub, Azure IoT, Facebook.
 
-    instagram:
-        disabled: false
-        simple: true
+    - jobTitle: Satellite Software Engineer
+      date: 2015 - 2016
+      description: Java, Eclipse RCP, Python, Protocol buffers, CORBA, HornetQ, C++, JUnit.
 
-    youtube:
-        disabled: false
-        privacyEnhanced: true
+  education:
+    details:
+    - courseName: Flutter App Development Bootcamp
+      date: 2019
+      description: App Brewery & Google Flutter Team
 
-services:
-    instagram:
-        disableInlineCSS: true
-    twitter:
-        disableInlineCSS: true
+    - courseName: Associate Android Developer
+      date: 2017
+      description: Google
+
+    - courseName: Leadership Skills & Team Management
+      date: 2015
+      description: University
+
+    - courseName: Bachelor's Degree in Telematics. 
+      date: 2010 - 2014
+      description: University
+
+  skills:
+    # settings:
+    #   useLess: true
+    details:
+    - name: Dart
+      percentage: 100
+      # color: blue
+      # description: you can add a description
+
+    - name: Kotlin
+      percentage: 100
+
+    - name: Java
+      percentage: 80
+
+    - name: Swift
+      percentage: 60
+
+    - name: C#
+      percentage: 50
+
+    - name: JavaScript
+      percentage: 50
+
+    - name: Python
+      percentage: 30
+
+    - name: C++
+      percentage: 30
+
+  platforms:
+    # settings:
+    #   useLess: true
+    details:
+    - name: Android
+      percentage: 100
+      # color: red
+      #description:
+
+    - name: iOS
+      percentage: 80
+
+    - name: Linux (Backend)
+      percentage: 80
+
+    - name: Firebase
+      percentage: 70
+
+    - name: MacOS
+      percentage: 70
+
+    - name: MacOS
+      percentage: 70
+
+    - name: Linux (Frontend)
+      percentage: 50
+
+    - name: Windows
+      percentage: 40
+
+  frameworks:
+    # settings:
+    #   useLess: true
+    details:
+    - name: Flutter
+      percentage: 100
+      # color: red
+      #description:
+
+    - name: Kotlin Multiplatform
+      percentage: 100
+
+    - name: Jetpack Compose
+      percentage: 80
+
+    - name: Material UI
+      percentage: 70
+
+    - name: Realm
+      percentage: 70
+
+    - name: SQLite
+      percentage: 70
+
+    - name: Cloud Functions
+      percentage: 60
+
+    - name: Unity
+      percentage: 40
+
+  languages:
+    # settings:
+    #   useLess: true
+    details:
+    - name: Spanish
+      # color: Blue
+      #description: 
+      percentage: 100
+
+    - name: English
+      percentage: 80
+
+    - name: Portuguese
+      percentage: 60
+
+  projects:
+    # settings:
+    #   useLess: true
+    details:
+    - title: Rapidrive
+      # color: red
+      date: 2024
+      link: https://rapidrive.app
+      description: Unlimited cloud storage powered by your own devices. Made with Flutter.
+
+    - title: Cryptool
+      date: 2021
+      link: https://github.com/nfdz/Cryptool
+      description: Open source cryptography Android application.
+
+    - title: Club App
+      date: 2020
+      link: https://github.com/nfdz/ClubApp
+      description: Android application to manage and loyalty your club members.
+
+    - title: Findoor
+      date: 2019
+      link: https://github.com/nfdz/Findoor
+      description: Android Library for Indoor Wi-Fi Navigation.
+
+    - title: Interactive Tree Stand
+      date: 2018
+      link: https://nfdz.dev/interactive-tree.jpeg
+      description: Arduino and Raspberry Pi advertising stand for a fair.
+
+    - title: Permissions Watcher
+      date: 2017
+      link: https://github.com/nfdz/PermissionsWatcher
+      description: Android permissions manager application.
+
+  # certifications:
+  #   # settings:
+  #   #   useLess: true
+  #   details:
+  #   - certName: Example Cert
+  #     company: Example Certifying Company
+  #     date: Date of Completion
+  #     badge: https://www.link.to.badge
+  #     #description: Lorem Ipsum
+  
+  misc: 
+    # settings:
+    #   useLess: true
+    commandName: hello
+    title: "greets the visitor"
+    titleColor: Lavender
+    content: |
+          Hi, how's everything going? :D 
+          Maybe you'd like to try a different way to say hello, try using 'contact'.
+    contentColor: orange
