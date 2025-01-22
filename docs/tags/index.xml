@@ -1,83 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on nfdz</title>
     <link>https://nfdz.dev/tags/</link>
     <description>Recent content in Tags on nfdz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://nfdz.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://nfdz.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>books</title>
+      <title>Books</title>
       <link>https://nfdz.dev/tags/books/</link>
       <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://nfdz.dev/tags/books/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>design-patterns</title>
+      <title>Design-Patterns</title>
       <link>https://nfdz.dev/tags/design-patterns/</link>
       <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://nfdz.dev/tags/design-patterns/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>android</title>
+      <title>Android</title>
       <link>https://nfdz.dev/tags/android/</link>
       <pubDate>Tue, 06 Aug 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://nfdz.dev/tags/android/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>firebase</title>
+      <title>Firebase</title>
       <link>https://nfdz.dev/tags/firebase/</link>
       <pubDate>Tue, 06 Aug 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://nfdz.dev/tags/firebase/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>open-source</title>
+      <title>Open-Source</title>
       <link>https://nfdz.dev/tags/open-source/</link>
       <pubDate>Tue, 06 Aug 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://nfdz.dev/tags/open-source/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>arduino</title>
+      <title>Arduino</title>
       <link>https://nfdz.dev/tags/arduino/</link>
       <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://nfdz.dev/tags/arduino/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>raspberry-pi</title>
+      <title>Raspberry-Pi</title>
       <link>https://nfdz.dev/tags/raspberry-pi/</link>
       <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://nfdz.dev/tags/raspberry-pi/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>java</title>
+      <title>Java</title>
       <link>https://nfdz.dev/tags/java/</link>
       <pubDate>Sun, 12 Nov 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://nfdz.dev/tags/java/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
